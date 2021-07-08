@@ -37,7 +37,7 @@ sudo python3 setup.py install
 Then install pisloth
 
 ```bash
-git clone https://github.com/sunfounder/pisloth.git
+git clone -b v2.0 https://github.com/sunfounder/pisloth.git
 cd pisloth
 sudo python3 setup.py install
 ```

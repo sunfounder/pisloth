@@ -8,17 +8,17 @@ music = Music()
 def main():
     # tts.say('Oh, hello there')
     # tts.say("Here are all the sound effects i can do")
-    for file in os.listdir("./sounds"):
-        name = file.split(".")[0]
-        print(name)
-        tts.say(name)
-        time.sleep(1)
-        try:
-            music.sound_effect_play('./sounds/%s' % file)
-        except Exception as e:
-            print(e)
-        time.sleep(2)
-    # music.sound_effect_play('./sounds/talk1.wav')
+    # for file in os.listdir("./sounds"):
+    #     name = file.split(".")[0]
+    #     print(name)
+    #     # tts.say(name)
+    #     time.sleep(1)
+    #     try:
+    #         music.sound_effect_play('./sounds/%s' % file)
+    #     except Exception as e:
+    #         print(e)
+    #     time.sleep(2)
+    music.sound_effect_play('./sounds/sign.wav')
 
 if __name__ == "__main__":
     main()  
