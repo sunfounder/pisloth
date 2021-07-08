@@ -1,3 +1,3 @@
-Robot Hat
+PiSloth
 =======================
-Library for Robot Hat
+Library for PiSloth

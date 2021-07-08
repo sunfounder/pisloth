@@ -222,11 +222,16 @@ class Sloth(Robot):
 
     }
 
-    def do_action(self,motion_name, step=1, speed=50):
+    def do_action(self,motion_name, step=1, speed=None, bpm=None):
+        if bpm == None:
+            speed = 50
         speed = mapping(speed, 0, 100, 0, 80)
         for _ in range(step):
             for motion in self.move_list[motion_name]:
-                self.servo_move(motion, speed)
+                if bpm != None:
+                    self.servo_move(motion, bpm=bpm)
+                else:
+                    self.servo_move(motion, speed=speed)
 
     def add_action(self,action_name,action_list):
         if action_name not in self.move_list.keys():

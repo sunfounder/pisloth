@@ -5,7 +5,7 @@ This repository is for SunFounder PiSloth - An biped robot for Raspberry Pi. you
 Quick Links:
 
 - [PiSloth](#pisloth)
-  - [About Robot Hat](#about-robot-hat)
+  - [About PiSloth](#about-pisloth)
   - [Update](#update)
   - [Installation](#installation)
   - [Trouble Shooting](#trouble-shooting)
@@ -13,7 +13,7 @@ Quick Links:
   - [License](#license)
   - [Contact us](#contact-us)
 
-## About Robot Hat
+## About PiSloth
 
 PiSloth is a biped artificial intelligence robot based on Raspberry Pi. It has 4 movable joints that can perform bionics movements, such as walking, standing, dancing and
 so on. In addition, it is also equipped with an ultrasonic module to support it to complete some interesting behaviors, such as playing football, tracking, obstacle avoidance, etc.
