@@ -54,13 +54,13 @@ def main():
         key = readkey()
         # print(key)
         if key == "w":
-            sloth.do_action('forward', 1, 100)
+            sloth.do_action('forward', 1, 90)
         elif key == "a":
-            sloth.do_action('turn left', 1, 100)
+            sloth.do_action('turn left', 1, 90)
         elif key == "s":
-            sloth.do_action('backward', 1, 100)
+            sloth.do_action('backward', 1, 90)
         elif key == "d":
-            sloth.do_action('turn right', 1, 100)
+            sloth.do_action('turn right', 1, 90)
         elif key == "1":
             music.sound_effect_play('./sounds/talk1.wav')
         elif key == "2":
@@ -68,7 +68,7 @@ def main():
         elif key == "3":
             music.sound_effect_play('./sounds/talk3.wav')
         elif key == "4":
-            music.sound_effect_play('./sounds/depress2.wav')
+            music.sound_effect_play('./sounds/depress.wav')
         elif key == "q":
             tts.say("Oh hello there")
         elif key == "e":

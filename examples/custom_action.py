@@ -4,10 +4,9 @@ import time
 
 sloth = Sloth([1,2,3,4])
 sloth.add_action("my_action", [
-    [0, -50, 0,  50],
-    [0,   0, 0,   0],
-    [0,  50, 0, -50],
-    [0,   0, 0,   0]])
+    [ 45,0  ,0, 0],
+    [0,   0, 0,   0]
+    ])
 
 def main():
     sloth.do_action("my_action", 1, 80)

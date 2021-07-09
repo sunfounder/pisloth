@@ -13,37 +13,25 @@ sloth = Sloth([1,2,3,4])
 sloth.set_offset([0,0,0,0])
 sonar = Ultrasonic(Pin("D0") ,Pin("D1"))
 
-# def main():
-#     # tts.say('Oh, hello there')
-#     # tts.say("Here are all the sound effects i can do")
-#     for file in os.listdir("./sounds"):
-#         name = file.split(".")[0]
-#         print(name)
-#         # tts.say(name)
-#         time.sleep(1)
-#         try:
-#             music.sound_effect_play('./sounds/%s' % file)
-#         except Exception as e:
-#             print(e)
-#         time.sleep(2)
-#     # music.sound_effect_play('./sounds/talk1.wav')
-
 alert_distance = 40
 contact_distance = 5
 
 def main():
     distance = sonar.read()
-    print(distance)
-    if distance <= alert_distance :
+    if distance <= alert_distance and distance >= contact_distance :
+        try:
+            music.sound_effect_threading('./sounds/warning.wav')
+        except Exception as e:
+            print(e)
         while True:
-            if(sonar.read()<=contact_distance):
+            distance = sonar.read()
+            print(distance)
+            if distance< 0:
+                continue
+            if distance<=contact_distance:
                 break
-            try:
-                music.sound_effect_threading('./sounds/warning.wav')
-            except Exception as e:
-                print(e)
-            sloth.do_action('forward', 1, 100)
-    sloth.do_action('stop', 1, 100)
+            sloth.do_action('forward', 1,95)
+    sloth.do_action('stand', 1, 90)
     time.sleep(1)
 
 
