@@ -115,7 +115,7 @@ class Sloth(Robot):
     ],
 
 
-    "stomp rihgt": [
+    "stomp right": [
       [0, 15, 0, 0],
       [0, 30, 0, -15],
       [0, 15, 0, -30],
