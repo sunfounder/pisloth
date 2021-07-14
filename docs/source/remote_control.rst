@@ -89,14 +89,14 @@ Remote Control
 .. code:: python
 
     def readchar():
-    fd = sys.stdin.fileno() 
-    old_settings = termios.tcgetattr(fd) 
-    try:
-        tty.setraw(sys.stdin.fileno())  
-        ch = sys.stdin.read(1)
-    finally:
-        termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)  
-    return ch
+		fd = sys.stdin.fileno() 
+		old_settings = termios.tcgetattr(fd) 
+		try:
+			tty.setraw(sys.stdin.fileno())  
+			ch = sys.stdin.read(1)
+		finally:
+			termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)  
+		return ch
 
 
 最后根据读取到按下的键盘字符让Pisloth做出设定好的动作，调用tts的功能讲话或者播放提前准备好的音频文件
