@@ -1,7 +1,7 @@
 DIY Action
 ===============
 
-通过之前课程的学习，你是不是对pisloth有了更深的了解呢？那么接下来让我们尝试自己设计pisloth的动作吧。
+Through the previous courses, do you have a deeper understanding of Pisloth? And next let’s try to design the movement of Pisloth by ourselves.
 
 **Code**
 
@@ -26,9 +26,9 @@ DIY Action
 
 **How it works?**
 
-你可以通过 ``add_action`` 函数来自定义pisloth的动作，第一个参数是动作的名称，
-第二个参数是个二维数组，数组里的四个参数用于控制pisloth腿部的四个舵机。我们会在
-下一课进行详细介绍。
+You can customize the action of Pisloth through the ``add_action`` function, the first parameter is the name of the action,
+The second parameter is a two-dimensional array. The four parameters in the array are used to control the four servos of the Pisloth leg. 
+For how to choose the value we will introduce it in detail in the next lesson.
 
 .. code:: python
 
@@ -38,4 +38,4 @@ DIY Action
         [0,   0, 0,   0]
         ])
 
-然后用 ``do_action`` 函数让pisloth做动作查看实际效果。
+Then use the ``do_action'' function to make pisloth do the action to see the actual effect.

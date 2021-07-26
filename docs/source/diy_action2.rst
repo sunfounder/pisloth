@@ -1,8 +1,8 @@
 DIY Action2
 ===============
 
-通过上一课，我们了解了如何用 ``add_action`` 函数自定义pisloth的动作。这节课我们会通过键盘直接控制pisloth腿部的四个舵机，可以让你
-对pisloth的腿部舵机有更直观的理解从而帮助你自定义一些更有趣的动作。
+Through the last lesson, we learned how to customize the action of Pisloth with the ``add_action`` function. In this lesson, we will directly control the four servos of the Pisloth leg through the keyboard, which allows you to
+have a more intuitive understanding of Pisloth's leg servos to help you customize some more interesting actions.
 
 **Code**
 
@@ -100,12 +100,9 @@ DIY Action2
 
 **How it works?**
 
-本程序分为两个部分，第一个部分读取按下的键盘的字符，第二部分是通过按下的键盘字符来控制四个舵机。
+This program is divided into two parts. The first part reads the characters of the pressed keyboard, and the second part controls the four servos by pressing the characters of the keyboard.
 
-``left_up_angle`` , ``left_down_angle`` , ``right_up_angle`` , 
-``right_down_angle`` 分别对应着函数 ``add_action`` 二维数组参数
-里面的四个值。我们通过按下预先设定好的键盘字符，来增加或减少这四个值从而控制
-pisloth腿部四个舵机的转动方向和幅度。
+``left_up_angle``, ``left_down_angle``, ``right_up_angle``, ``right_down_angle`` corresponds to the four values ​​in the parameters of the function ``add_action``. We increase or decrease these four values ​​by pressing the preset keyboard characters to control the rotation direction and amplitude of the four servos on the pisloth leg.
 
 .. code:: python
 

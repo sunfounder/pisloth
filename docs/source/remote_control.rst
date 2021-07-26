@@ -1,8 +1,7 @@
 Remote Control
 ==================
 
-在这个项目中，我们会学习如何用键盘远程控制pisloth。你可以通过特定的键位来操控pisloth上下左右移动和讲话。
-
+In this project, we will learn how to use the keyboard to remotely control the Pisloth. You can control the Pisloth to move up, down, left, and right and speak through specific keys.
 **Code**
 
 .. code:: python
@@ -82,10 +81,9 @@ Remote Control
 
 **How it works?**
 
-该函数会引用标准输入流，将读取到的数据流的第一个字符返回。 ``tty.setraw(sys.stdin.fileno)`` 是将标准输入流改为raw模式，即所有字符在
-传输过程中都不会被转义，包括特殊字符。更改模式之前要备份原来的模式，更改之后要还原回来， ``old_settings = termios.tcgetattr(fd)`` 与
-``termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)`` 就起到了备份和还原的作用。
-
+This function refers to the standard input stream and returns the first character of the data stream read. ``tty.setraw(sys.stdin.fileno)`` is to change the standard input stream to raw mode, that is, all characters 
+will not be escaped during transmission, including special characters. Before changing the mode, back up the original mode, and restore it after the change. ``old_settings = termios.tcgetattr(fd)'' and
+``termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)'' plays the role of backup and restore.
 .. code:: python
 
     def readchar():
@@ -99,7 +97,7 @@ Remote Control
 		return ch
 
 
-最后根据读取到按下的键盘字符让Pisloth做出设定好的动作，调用tts的功能讲话或者播放提前准备好的音频文件
+Finally, according to reading the pressed keyboard character, let Pisloth do the actions we set, call the function of tts to speak or play the audio file prepared in advance
 
 .. code:: python
 

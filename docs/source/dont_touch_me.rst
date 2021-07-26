@@ -1,7 +1,7 @@
 Don\'t Touch Me
 ==================
 
-在这个项目中，我们会让Pisloth表达自己的小情绪，当你试着触摸Pisloth时，它会生气的说不要碰我，然后退后离开你。
+In this project, we will let Pisloth express his little emotions. When you try to touch Pisloth, He will be on his guard and get back from you.
 
 **Code**
 
@@ -43,7 +43,7 @@ Don\'t Touch Me
 
 **How it works?**
 
-实例化各种要用到的音乐类、pisloth以及红外感应模块的类
+Instantiate various classes of music, pislot and infrared sensor modules to be used.
 
 .. code:: python
 
@@ -53,7 +53,7 @@ Don\'t Touch Me
     sloth.set_offset([0,0,0,0])
     sonar = Ultrasonic(Pin("D0") ,Pin("D1"))
 
-红外感应模块读取你的手与pisloth的距离，设置判断条件，当这个距离小于或等于alert_distance时，pisloth会播放音频文件并做出backward和stand动作。
+The ultrasonic module reads the distance between your hand and the Pisloth and sets the judgment condition. When the distance is less than or equal to alert_distance, Pisloth will play the audio file and do ``backward`` and ``stand`` actions.
 
 .. code:: python
 

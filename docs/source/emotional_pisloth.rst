@@ -1,8 +1,8 @@
 Emotional PiSloth
 =======================
 
-在这个项目，我们会让pisloth变得更加生动，我们会让它表现出更多人类的感情动作，
-当然学完这课后，你也可以自己设计更多的感情动作出来。
+In this project, we will make the Pisloth more vivid, and we will make it show more human emotions,
+of course, after learning this lesson, you can also design more emotional actions yourself.
 
 **Code**
 
@@ -133,7 +133,7 @@ Emotional PiSloth
 
 **How it works?**
 
-Pisloth播放sign.wav并执行 ``hook`` 动作表示confuse.
+Pisloth plays ``sign.wav`` and executes the ``hook'' action to indicate confuse.
 
 .. code:: python
 
@@ -144,7 +144,7 @@ Pisloth播放sign.wav并执行 ``hook`` 动作表示confuse.
             print(e)
         sloth.do_action('hook', 1, 100)  
 
-Pisloth播放happy2.wav并循环3次执行 ``hook`` 和 ``stand``  动作表示happy.
+Pisloth plays ``happy2.wav`` and executes the ``hook`` and ``stand'' actions 3 times to indicate happy.
 
 .. code:: python
 
@@ -157,7 +157,7 @@ Pisloth播放happy2.wav并循环3次执行 ``hook`` 和 ``stand``  动作表示h
             sloth.do_action('hook', 1, 100)
             sloth.do_action('stand', 1, 100)
 
-Pisloth播放warning.wav并执行 ``hook`` , ``stand`` , ``walk backward boldly`` 动作表示fear.
+Pisloth plays warning.wav and executes ``hook``, ``stand``, ``walk backward boldly`` actions to indicate fear.
 
 .. code:: python
 
@@ -175,7 +175,7 @@ Pisloth播放warning.wav并执行 ``hook`` , ``stand`` , ``walk backward boldly`
         sloth.do_action('walk backward boldly', 1, 100)
         sloth.do_action('stand', 1, 100)
 
-Pisloth播放depress.wav并执行 ``big swing`` 动作表示sad.
+Pisloth plays ``depress.wav`` and performs the ``big swing'' action to indicate sad.
 
 .. code:: python
 
@@ -186,7 +186,7 @@ Pisloth播放depress.wav并执行 ``big swing`` 动作表示sad.
             print(e)
         sloth.do_action('big swing', 1, 100)  
 
-Pisloth播放error.wav并执行 ``walk backward boldly`` 和 ``stand`` 动作表示angry.
+Pisloth plays ``error.wav`` and performs the ``walk backward boldly`` and ``stand`` actions to indicate angry.
 
 .. code:: python
 
@@ -198,7 +198,7 @@ Pisloth播放error.wav并执行 ``walk backward boldly`` 和 ``stand`` 动作表
         sloth.do_action('walk backward boldly', 1, 100)  
         sloth.do_action('stand', 1, 100)
 
-Pisloth播放depress2.wav并执行 ``fall left`` 动作表示fail.
+Pisloth plays ``depress2.wav`` and executes the ``fall left`` action to indicate a fall.
 
 .. code:: python
 
@@ -210,9 +210,10 @@ Pisloth播放depress2.wav并执行 ``fall left`` 动作表示fail.
         sloth.do_action('fall left', 1, 100)  
 
 .. note::
-    这个动作会让pisloth摔倒，注意别让它从桌子上落下摔坏。
+    This action will make the Pisloth fall, be careful not to let it fall off the table and break it.
 
-Pisloth播放talk3.wav,talk2.wav并执行 ``close`` , ``stand`` 动作表示shy.
+
+Pisloth plays ``talk3.wav``, ``talk2.wav`` and executes ``close``, ``stand'' action means shy.
 
 .. code:: python
 

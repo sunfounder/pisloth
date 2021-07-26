@@ -1,9 +1,9 @@
 Dance
 =========
 
-在这个项目中，我们会播放一段音乐，并让Pisloth跟着音乐的节奏来跳一段舞。
+In this project, we will play a piece of music and let Pisloth dance to the rhythm of the music.
 
-You can open ``dancing.py`` in the folder of the ``example`` or directly copy the following code to the Python IDE to run.
+You can open ``dancing.py`` in the folder of the ``example`` with command ``sudo pyrhon3 dancing.py`` or directly copy the following code to the Python IDE to run.
 
 **Code**
 
@@ -69,23 +69,22 @@ You can open ``dancing.py`` in the folder of the ``example`` or directly copy th
 
 **How it works?**
 
-你可以通过导入下面的这个库来让pisloth播放音乐。
+You can make Pisloth play music by importing the following library.
 
 .. code:: python
 
     from robot_hat import TTS, Music
 
-播放musics目录下的背景音乐并设置音量为20。
+Play the background music in the music directory and set the volume to 20.
 
 .. code:: python
 
     music.background_music('./musics/india-Arulo.mp3')
     music.music_set_volume(20)
 
-执行函数 ``sloth.do_action(motion_name,step=1,speed=None,bpm=None)`` 让pisloth执行设定好的动作。
-这里的bpm参数会影响pisloth做动作的间隔时间，数值越大，间隔时间越短。
-当我们通过一些方法了解到一首音乐的bpm后，你可以根据这首音乐的bpm自由搭配pisloth的动作，来让它伴随不同风格的音乐跳
-不同风格的舞蹈。
+Execute the function ``sloth.do_action(motion_name,step=1,speed=None,bpm=None)`` to let Pisloth perform the actions we set.
+The bpm parameter here will affect the interval time between Pisloth's actions, the larger the value, the shorter the interval time.
+When we learn about the bpm of a piece of music through some methods, you can freely match the movement of the Pisloth according to the bpm of this music to make it dance with different styles of music.
 
-对于音乐的bmp，如果你想了解更多，可以参考:
+For music bmp, if you want to know more, you can refer to:
 https://en.wikipedia.org/wiki/Tempo

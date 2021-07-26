@@ -1,7 +1,7 @@
 Obstacle Avoidance
 =====================
 
-在这个项目中，pisloth将使用超声波模块检测前面的障碍物。当检测到障碍物时，pisloth会吓一跳，然后连忙后退并寻找别的路继续前行。
+In this project, Pisloth will use an ultrasonic module to detect obstacles in front. When an obstacle is detected, Pisloth will be taken aback, and then find another way to move on.
 
 **Code**
 
@@ -60,9 +60,9 @@ Then initialize the ultrasonic pins.
 
     sonar = Ultrasonic(Pin("D0") ,Pin("D1"))
 
-读取超声波检测距离值，设置条件判断，当距离小于 ``alert_distance`` 时，播放音频文件
-并让pisloth依次做 ``hook`` , ``stand`` , ``turn left`` , ``stand`` 动作。当距离大于 ``alert_distance`` 时，
-pisloth做 ``forward`` 动作。
+Read the distance detected by the ultrasonic, set the condition to judge, when the distance is less than ``alert_distance``, play the audio file ``sign.wav``
+and let Pisloth do the ``hook``, ``stand``, ``turn left``, ``stand`` actions in sequence. When the distance is greater than ``alert_distance``,
+Pisloth does the ``forward`` action.
 
 .. code:: python
 

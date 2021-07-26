@@ -3,9 +3,9 @@ Move
 
 The basic functions of Pisloth have been encapsulated in ``sloth.py`` under the path ``/home/pi/pisloth``, chiefly controlling the servo.
 
-让pisloth向前、向左、向右移动，这需要我们用命令来驱动pisloth腿上的四个舵机。
+Let the Pisloth move forward, left and right, which requires us to use commands to drive the four servos on the Pisloth leg.
 
-You can open ``move.py`` in the folder of the ``example`` or directly copy the following code to the Python IDE to run.
+You can open ``move.py`` in the folder of the ``example`` with command ``sudo pyrhon3 move.py`` or directly copy the following code to the Python IDE to run.
 
 **Code**
 
@@ -36,7 +36,7 @@ First, import the libraries to support the basic functionality of pisloth.
     from pisloth import Sloth
 
 
-然后实例化pisloth的类
+Then instantiate the Pisloth class.
 
 .. code:: python
 
@@ -52,12 +52,12 @@ Finally use the following function to make Pisloth move.
     sloth.do_action('turn right', 7, 90)
     sloth.do_action('forward', 5, 90)
 
-总的来说，PiSloth的所有行动都可以用函数 ``sloth.do_action(motion_name,step=1,speed=None,bpm=None)`` 来实现。它拥有四个参数：
+In general, all actions of PiSloth can be implemented with the function ``sloth.do_action(motion_name,step=1,speed=None,bpm=None)''. It has four parameters:
 
-* ``motion_name`` 是调用预设好的具体动作，包括： ``forward`` , ``turn right`` , ``turn left`` , ``backward`` , ``stand`` , ``moon walk left`` , ``moon walk right`` , ``hook`` , ``big swing`` , ``swing`` , ``walk boldly`` , ``walk backward boldly`` , ``walk shyly`` , ``walk backward shyly`` , ``stomp rihgt`` , ``stomp left`` , ``close`` , ``open`` , ``tiptoe left`` , ``tiptoe right`` , ``fall left`` , ``fall right``
+* ``motion_name``  is the preset specific actions, including: ``forward`` , ``turn right`` , ``turn left`` , ``backward`` , ``stand`` , ``moon walk left`` , ``moon walk right`` , ``hook`` , ``big swing`` , ``swing`` , ``walk boldly`` , ``walk backward boldly`` , ``walk shyly`` , ``walk backward shyly`` , ``stomp rihgt`` , ``stomp left`` , ``close`` , ``open`` , ``tiptoe left`` , ``tiptoe right`` , ``fall left`` , ``fall right``
 
-* ``step`` 表示动作的次数，默认次数是1
+* ``step`` represents the number of actions, the default number is 1.
 
-* ``speed`` 表示做动作的速度，默认是50，范围是0~100
+* ``speed`` means the speed of the action, the default is 50, the range is 0~100.
 
-* ``bpm`` 表示节奏，我们在后面的dance课程会有用到
+* ``bpm`` means rhythm, we will use it later in the dance course.

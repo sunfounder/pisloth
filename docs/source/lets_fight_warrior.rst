@@ -1,7 +1,7 @@
 Let\'s fight! Warrior!
 =======================
 
-在这个项目中，我们会让Pisloth变成一位会挑衅你的战士，它会浑身充满着斗志向你冲过来。
+In this project, we will make Pisloth a warrior who will provoke you, and it will rush towards you full of fighting spirit.
 
 **Code**
 
@@ -28,7 +28,9 @@ Let\'s fight! Warrior!
         distance = sonar.read()
         if distance <= alert_distance and distance >= contact_distance :
             try:
-                music.sound_effect_threading('./sounds/warning.wav')
+            music.sound_effect_play('./sounds/battle.wav')
+            music.background_music('./musics/attack.mp3')
+            music.music_set_volume(20)
             except Exception as e:
                 print(e)
             while True:
@@ -49,16 +51,17 @@ Let\'s fight! Warrior!
 
 **How it works?**
 
-红外感应模块读取障碍物与pisloth的距离，当这个距离小于或等于alert_distance并
-大于或等于 ``contact_distance`` 时，pisloth会播放 ``warning.wav`` ，并让pisloth循环执行
-向前冲锋的动作，当距离小于或等于 ``contact_distance`` 时便跳出循环停止冲锋。
+The ultrasonic module reads the distance between the obstacle and the Pisloth, when the distance is less than or equal to alert_distance and
+When greater than or equal to ``contact_distance``, Pisloth will play ``warning.wav`` and ``attack.mp3``, and let him cycle forward to charge, when the distance is less than or equal to ``contact_distance``, it will jump out of the loop and stop charging.
 
 .. code:: python
 
     distance = sonar.read()
     if distance <= alert_distance and distance >= contact_distance :
         try:
-            music.sound_effect_threading('./sounds/warning.wav')
+            music.sound_effect_play('./sounds/battle.wav')
+            music.background_music('./musics/attack.mp3')
+            music.music_set_volume(20)
         except Exception as e:
             print(e)
         while True:
@@ -73,5 +76,4 @@ Let\'s fight! Warrior!
     time.sleep(1)
 
 .. note::
-    当红外感应模块距离障碍过远或者由于线路问题导致没有读到数据时会出现 ``distance<0`` 的情况，可以用
-     ``continue`` 忽略这些干扰继续循环。
+    When the ultrasonic module is too far away from the obstacle or the data is not read due to the wire problem, the situation of ``distance<0`` will appear, you can use it ``continue`` ignore these disturbances and continue the cycle.

@@ -29,7 +29,7 @@ If you want to program in Python, then you will need to learn some basic Python 
    introduction
    list_and_assembly
    about_robot_hat 
-   play_with_ezblock
+   ezblock/play_with_ezblock
    play_with_python
    faq
 
