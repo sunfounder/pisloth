@@ -7,6 +7,9 @@ Here, PiSloth is a brave warrior, when it appears in front of the enemy, it will
   :width: 400
   :align: center
 
+.. note::
+
+    You can download and print the :download:`cardstock <https://github.com/sunfounder/sf-pdf/tree/master/assembly_file/card>` for your PiSloth.
 
 **Run the Code**
 

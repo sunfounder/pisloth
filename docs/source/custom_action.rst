@@ -9,6 +9,9 @@ For example, have PiSloth make the step from the previous project and then retur
   :width: 400
   :align: center
 
+.. note::
+
+    You can download and print the :download:`cardstock <https://github.com/sunfounder/sf-pdf/tree/master/assembly_file/card>` for your PiSloth.
 
 **Step 1**: Go to the ``/home/pi/pisloth/examples`` path.
 

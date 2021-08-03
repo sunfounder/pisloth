@@ -14,7 +14,7 @@ All we have to do is to use the buttons in the remote control page to make PiSlo
 
 .. note::
 
-  You can download the PiSloth cards here: :download:`warrior <https://github.com/sunfounder/sf-pdf/tree/master/assembly_file/card>`.
+  You can download and print the :download:`cardstock <https://github.com/sunfounder/sf-pdf/tree/master/assembly_file/card>` for your PiSloth.
 
 
 **Step 1:** Drag out 9 buttons in the Remote Control to control the rotation angles of the 4 Servos on the PiSloth.

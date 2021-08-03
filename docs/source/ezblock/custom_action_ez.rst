@@ -11,8 +11,7 @@ For example, have PiSloth make the step from the previous project and then retur
 
 .. note::
 
-  You can download the PiSloth cards here: :download:`warrior <https://github.com/sunfounder/sf-pdf/tree/master/assembly_file/card>`.
-
+  You can download and print the :download:`cardstock <https://github.com/sunfounder/sf-pdf/tree/master/assembly_file/card>` for your PiSloth.
 
 
 **TIPS**

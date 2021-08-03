@@ -9,7 +9,7 @@ Here, PiSloth is a brave warrior, when it appears in front of the enemy, it will
 
 .. note::
 
-  You can download the PiSloth cards here: :download:`warrior <https://github.com/sunfounder/sf-pdf/tree/master/assembly_file/card>`.
+  You can download and print the :download:`cardstock <https://github.com/sunfounder/sf-pdf/tree/master/assembly_file/card>` for your PiSloth.
 
 **TIPS**
 

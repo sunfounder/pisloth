@@ -10,7 +10,9 @@ Now, PiSltoh will show you his newly learned dance.
     :width: 400
     :align: center
 
+.. note::
 
+    You can download and print the :download:`cardstock <https://github.com/sunfounder/sf-pdf/tree/master/assembly_file/card>` for your PiSloth.
 
 **Run the Code**
 

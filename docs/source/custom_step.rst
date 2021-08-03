@@ -19,6 +19,11 @@ After the code runs, press the **key ZX** and **key NM** (according to the actua
   :width: 400
   :align: center
 
+.. note::
+
+    You can download and print the :download:`cardstock <https://github.com/sunfounder/sf-pdf/tree/master/assembly_file/card>` for your PiSloth.
+
+
 Press the **key SPACE** to print the angle of the 4 servos at this time. You need to record these angle values, which will be used in the next project :ref:`Custom Action`.
 
 .. image:: img/custom_step.png
