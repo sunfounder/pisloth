@@ -1,17 +1,17 @@
 
 from pisloth import Sloth
-from robot_hat import TTS, Music
+from robot_hat import Music
 from robot_hat import Ultrasonic
 from robot_hat import Pin
 import time
 import os
 
-tts = TTS()
+
 music = Music()
 
 sloth = Sloth([1,2,3,4])
 sloth.set_offset([0,0,0,0])
-sonar = Ultrasonic(Pin("D0") ,Pin("D1"))
+sonar = Ultrasonic(Pin("D2") ,Pin("D3"))
 
 alert_distance = 20
 
