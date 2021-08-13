@@ -15,5 +15,5 @@ After the code runs, PiSloth will walk forward. If it detects that the distance 
 
 Since the effective detection distance of the ultrasonic sensor module is 2-400cm, when the detection distance is less than it will do nothing.
 
-.. image:: img/Obstacle.png
+.. image:: media/Obstacle.png
 

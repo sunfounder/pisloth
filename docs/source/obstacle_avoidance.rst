@@ -6,6 +6,10 @@ In this project, Pisloth will use an ultrasonic module to detect obstacles in fr
 
 **Run the Code**
 
+.. raw:: html
+
+    <run></run>
+
 .. code-block::
 
     cd /home/pi/pisloth/examples
@@ -15,6 +19,13 @@ After the code runs, PiSloth will walk forward. If it detects that the distance 
 
 
 **Code**
+
+.. note::
+    You can **Modify/Reset/Copy/Run/Stop** the code below. But before that, you need to go to  source code path like ``pisloth\examples``. After modifying the code, you can run it directly to see the effect.
+
+.. raw:: html
+
+    <run></run>
 
 .. code-block:: python
 

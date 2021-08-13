@@ -8,27 +8,27 @@ In this project, we will learn how to customize PiSloth's step.
 All we have to do is to use the buttons in the remote control page to make PiSloth complete the step shown in the figure below, and then get the angles of the 4 Servos at that time.
 
 
-.. image:: img/diy_pic.jpg
+.. image:: media/diy_pic.jpg
   :width: 400
   :align: center
 
 .. note::
 
-  You can download and print the :download:`cardstock <https://github.com/sunfounder/sf-pdf/tree/master/assembly_file/card>` for your PiSloth.
+  You can download and print the `cardstock <https://github.com/sunfounder/sf-pdf/tree/master/prop_card/cartoon_mask>`_ for your PiSloth.
 
 
 **Step 1:** Drag out 9 buttons in the Remote Control to control the rotation angles of the 4 Servos on the PiSloth.
 
-.. image:: img/DIYII1.png
+.. image:: media/DIYII1.png
 
 **Step 2:** Create 4 variables to store the angles of the 4 Servos.
 
-.. image:: img/DIYII2.png
+.. image:: media/DIYII2.png
   :width: 600
 
 Then initialize the angle to 0.
 
-.. image:: img/DIYII3.png
+.. image:: media/DIYII3.png
 
 
 **Step 3:** Reads the values of the different buttons that are used to control the angles of the Servos.
@@ -39,15 +39,15 @@ Then initialize the angle to 0.
 * **button GH** control the **right-foot**.
 * Press **button I** and the angles of the 4 Servos will be printed in the Debug Monitor.
 
-.. image:: img/DIYII4.png
+.. image:: media/DIYII4.png
 
 **Step 4:** At the end of the Forever block, fill in the angle values read into the 4 servos and use the **do action** block to make PiSloth do this step.
 
-.. image:: img/DIYII7.png
+.. image:: media/DIYII7.png
 
 **Step 5:** Once the code is complete, click the **download** icon in the bottom right corner to download and run the code. Now we can click **button CD** and **button GH** (according to the actual code) to make PiSloth pose like this, you can also make it do other steps.
 
-.. image:: img/diy_pic.jpg
+.. image:: media/diy_pic.jpg
   :width: 400
   :align: center
 
@@ -57,8 +57,8 @@ Then initialize the angle to 0.
 
   Some times more than 2 sets of data may appear because if you click **button I** for a little longer, Ezblock will think **button I** was clicked 2 times. You can clear the data and click button I again.
 
-.. image:: img/DIYII5.png
+.. image:: media/DIYII5.png
 
 The complete code is as follows:
 
-.. image:: img/DIYII.png
+.. image:: media/DIYII.png

@@ -6,15 +6,24 @@ PiSloth is very emotional, sometimes happy, sometimes shy, sometimes confused.
 
 **Run the Code**
 
+.. raw:: html
+
+    <run></run>
+
 .. code-block::
 
     cd /home/pi/pisloth/examples
     sudo python3 emotional_pisloth.py
 
 
-
 **Code**
 
+.. note::
+    You can **Modify/Reset/Copy/Run/Stop** the code below. But before that, you need to go to  source code path like ``pisloth\examples``. After modifying the code, you can run it directly to see the effect.
+
+.. raw:: html
+
+    <run></run>
 
 .. code-block:: python
 

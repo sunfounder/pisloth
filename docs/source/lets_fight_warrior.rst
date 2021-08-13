@@ -3,16 +3,19 @@ Let's Fight! Warrior!
 
 Here, PiSloth is a brave warrior, when it appears in front of the enemy, it will let out a roar and rush to the enemy.
 
-.. image:: ezblock/img/warrir.jpg
+.. image:: ezblock/media/warrir.jpg
   :width: 400
   :align: center
 
 .. note::
 
-    You can download and print the :download:`cardstock <https://github.com/sunfounder/sf-pdf/tree/master/assembly_file/card>` for your PiSloth.
+    You can download and print the `cardstock <https://github.com/sunfounder/sf-pdf/tree/master/prop_card/cartoon_mask>`_ for your PiSloth.
 
 **Run the Code**
 
+.. raw:: html
+
+    <run></run>
 
 .. code-block::
 
@@ -24,6 +27,13 @@ After the code is run, PiSloth will continuously detect the distance of the obst
 
 
 **Code**
+
+.. note::
+    You can **Modify/Reset/Copy/Run/Stop** the code below. But before that, you need to go to  source code path like ``pisloth\examples``. After modifying the code, you can run it directly to see the effect.
+
+.. raw:: html
+
+    <run></run>
 
 .. code-block:: python
 

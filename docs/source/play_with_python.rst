@@ -5,6 +5,7 @@ If you want to program in python, then you will need to learn some basic Python 
 
 
 .. toctree::
+    :maxdepth: 2
 
     quick_guide_on_python
 
@@ -20,5 +21,5 @@ After the assembly is complete, you can try to run the projects below.
     lets_fight_warrior
     emotional_pisloth
     remote_control
-    custom_step
-    custom_action
+    custom_step_python
+    custom_action_python

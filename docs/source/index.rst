@@ -6,7 +6,7 @@ Thanks for choosing our PiSloth.
 
 PiSloth is a Raspberry Pi Bionic robot with an aluminum alloy structure. It can talk, dance, and even express emotions, such as happiness and excitement.
 
-It has 22 different movements, such as: Stomp, Swing and MoonWalk, and you can customize the movements according to your needs. PiSloth's eyes consist of an ultrasonic sensor module that can be used to detect distance for obstacle avoidance and following functions.
+It has 22 different actions, such as: Stomp, Swing and MoonWalk, and you can customize the actions according to your needs. PiSloth's eyes consist of an ultrasonic sensor module that can be used to detect distance for obstacle avoidance and following functions.
 
 In this tutorial, a list and assembly pdf, introduction to Robot HAT, and programming of PiSloth are included.
 

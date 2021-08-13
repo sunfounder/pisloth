@@ -3,11 +3,15 @@ Move
 
 This is the first project. PiSloth has woken up, and it moves freely.
 
-.. image:: ezblock/img/movement.png
+.. image:: ezblock/media/movement.png
   :align: center
 
 
 **Run the Code**
+
+.. raw:: html
+
+    <run></run>
 
 .. code-block::
 
@@ -18,6 +22,13 @@ After running the code, you will see PiSloth move left 7 steps, forward 5 steps,
 
 
 **Code**
+
+.. note::
+    You can **Modify/Reset/Copy/Run/Stop** the code below. But before that, you need to go to  source code path like ``pisloth\examples``. After modifying the code, you can run it directly to see the effect.
+
+.. raw:: html
+
+    <run></run>
 
 .. code-block:: python
 

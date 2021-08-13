@@ -1,7 +1,7 @@
 About Robot HAT
 -----------------------------
 
-.. image:: img/picar_x_pic7.png
+.. image:: media/picar_x_pic7.png
 
 **RST Button**
     * Short pressing RST Button causes program resetting.

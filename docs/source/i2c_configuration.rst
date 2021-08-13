@@ -5,6 +5,9 @@ Enable the I2C port of your Raspberry Pi (If you have
 enabled it, skip this; if you do not know whether you have done that or
 not, please continue).
 
+.. raw:: html
+
+    <run></run>
 
 .. code-block:: 
 
@@ -12,16 +15,16 @@ not, please continue).
 
 **3 Interfacing options**
 
-.. image:: img/image282.png
+.. image:: media/image282.png
     :align: center
 
 **P5 I2C**
 
-.. image:: img/image283.png
+.. image:: media/image283.png
     :align: center
 
 **<Yes>, then <Ok> -> <Finish>**.
 
-.. image:: img/image284.png
+.. image:: media/image284.png
     :align: center
 

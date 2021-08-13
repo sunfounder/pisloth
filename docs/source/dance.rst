@@ -6,16 +6,19 @@ Dance
 
 Now, PiSltoh will show you his newly learned dance.
 
-.. image:: ezblock/img/dance_pic.jpg
+.. image:: ezblock/media/dance_pic.jpg
     :width: 400
     :align: center
 
 .. note::
 
-    You can download and print the :download:`cardstock <https://github.com/sunfounder/sf-pdf/tree/master/assembly_file/card>` for your PiSloth.
+    You can download and print the `cardstock <https://github.com/sunfounder/sf-pdf/tree/master/prop_card/cartoon_mask>`_ for your PiSloth.
 
 **Run the Code**
 
+.. raw:: html
+
+    <run></run>
 
 .. code-block::
 
@@ -28,9 +31,11 @@ The whole dance is divided into 2 parts, and PiSloth will finish these 2 parts w
 **Code**
 
 .. note::
+    You can **Modify/Reset/Copy/Run/Stop** the code below. But before that, you need to go to  source code path like ``pisloth\examples``. After modifying the code, you can run it directly to see the effect.
 
-    You can **Modify/Reset/Copy/Run/Stop** the code below. But before that, you need to go to a specific path like ``/home/pi/pisloth/examples``. After modifying the code, you can run it directly to see the effect. After confirming that there are no problems, you can use the Copy button to copy the modified code, then open the source code in Terminal via ``nano dancing.py`` and paste it.
+.. raw:: html
 
+    <run></run>
 
 .. code-block:: python
 

@@ -13,11 +13,11 @@ Before assembling the PiSloth, follow the instructions on how to install the Ezb
 
 After burning the Ezblock system on the SD-card, the P11 port on the Robot HAT is set to calibrate the servo angle to a 0° angle. To make sure the servo has been correctly set to 0°, first gently insert a rocker arm in the servo shaft, then slightly rotate the rocker arm to a different angle.
 
-.. image:: img/servo_arm.png
+.. image:: media/servo_arm.png
 
 Next, insert the servo cable into the P11 port as shown below:
 
-.. image:: img/pin11_connect.png
+.. image:: media/pin11_connect.png
     :width: 600
 
 Turn on the **Power Switch** to the Robot HAT, and the servo arm should return to the 0° position. If the servo arm does not return to 0°, press the **RST** button to restart the Robot HAT.

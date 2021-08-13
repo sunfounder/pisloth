@@ -9,40 +9,40 @@ You may want to simplify the program with **Functions**, especially when you per
 
 Click on the **Functions** category and select the appropriate function block, the function you created will also appear here.
 
-.. image:: img/emotional2.png
+.. image:: media/emotional2.png
   :width: 600
 
 The **Function** block without output is used here.
 
-.. image:: img/function_name.png
+.. image:: media/function_name.png
 
 
 **EXAMPLE**
 
 **Shy**
 
-.. image:: img/shy.png
+.. image:: media/shy.png
 
 **Confuse**
 
-.. image:: img/confuse.png
+.. image:: media/confuse.png
 
 **Happy**
 
-.. image:: img/happy.png
+.. image:: media/happy.png
 
 **Fear**
 
-.. image:: img/fear.png
+.. image:: media/fear.png
 
 **Sad**
 
-.. image:: img/sad.png
+.. image:: media/sad.png
 
 **Fall**
 
-.. image:: img/fall.png
+.. image:: media/fall.png
 
 Call all custom functions in the Forever block.
 
-.. image:: img/emotional.png
+.. image:: media/emotional.png
