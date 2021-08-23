@@ -9,7 +9,7 @@ Now, PiSltoh will show you his newly learned dance.
 
 .. note::
 
-    You can download and print the `cardstock <https://github.com/sunfounder/sf-pdf/tree/master/prop_card/cartoon_mask>`_ for your PiSloth.
+    You can download and print the `PDF Cartoon Mask <https://github.com/sunfounder/sf-pdf/tree/master/prop_card/cartoon_mask>`_ for your PiSloth.
 
 **TIPS**
 

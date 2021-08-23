@@ -25,7 +25,7 @@ After the code runs, press the **key ZX** and **key NM** (according to the actua
 
 .. note::
 
-    You can download and print the `cardstock <https://github.com/sunfounder/sf-pdf/tree/master/prop_card/cartoon_mask>`_ for your PiSloth.
+    You can download and print the `PDF Cartoon Mask <https://github.com/sunfounder/sf-pdf/tree/master/prop_card/cartoon_mask>`_ for your PiSloth.
 
 
 Press the **key SPACE** to print the angle of the 4 servos at this time. You need to record these angle values, which will be used in the next project :ref:`custom_action_python`.
