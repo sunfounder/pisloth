@@ -11,7 +11,7 @@ For example, have PiSloth make the step from the previous project and then retur
 
 .. note::
 
-  You can download and print the `cardstock <https://github.com/sunfounder/sf-pdf/tree/master/prop_card/cartoon_mask>`_ for your PiSloth.
+  You can download and print the `PDF Cartoon Mask <https://github.com/sunfounder/sf-pdf/tree/master/prop_card/cartoon_mask>`_ for your PiSloth.
 
 
 **TIPS**

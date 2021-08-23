@@ -14,7 +14,7 @@ All we have to do is to use the buttons in the remote control page to make PiSlo
 
 .. note::
 
-  You can download and print the `cardstock <https://github.com/sunfounder/sf-pdf/tree/master/prop_card/cartoon_mask>`_ for your PiSloth.
+  You can download and print the `PDF Cartoon Mask <https://github.com/sunfounder/sf-pdf/tree/master/prop_card/cartoon_mask>`_ for your PiSloth.
 
 
 **Step 1:** Drag out 9 buttons in the Remote Control to control the rotation angles of the 4 Servos on the PiSloth.
