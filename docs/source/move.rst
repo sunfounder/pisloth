@@ -64,7 +64,7 @@ Then instantiate the ``Sloth`` class.
     sloth = Sloth([1,2,3,4])
     sloth.set_offset([0,0,0,0])
 
-Finally use the ``sloth.do_action()`` function to make Pisloth move.
+Finally use the ``sloth.do_action()`` function to make PiSloth move.
 
 .. code-block:: python
 

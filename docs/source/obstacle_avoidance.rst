@@ -1,7 +1,7 @@
 Obstacle Avoidance
 =====================
 
-In this project, Pisloth will use an ultrasonic module to detect obstacles in front. When PiSloth detects an obstacle, it will send a signal and look for another direction to move forward.
+In this project, PiSloth will use an ultrasonic module to detect obstacles in front. When PiSloth detects an obstacle, it will send a signal and look for another direction to move forward.
 
 
 **Run the Code**

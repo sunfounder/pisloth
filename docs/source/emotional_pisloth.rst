@@ -158,6 +158,6 @@ In this project, actions + sound effects are combined into different emotional a
 
 .. note::
 
-    This ``fail`` action will make the Pisloth fall, be careful not to let it fall off the table and break it.
+    This ``fail`` action will make the PiSloth fall, be careful not to let it fall off the table and break it.
 
     You can add different sound effects or music to ``musics`` or ``sounds`` folder via :ref:`Filezilla Software`.

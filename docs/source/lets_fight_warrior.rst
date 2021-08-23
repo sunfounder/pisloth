@@ -87,7 +87,7 @@ After the code is run, PiSloth will continuously detect the distance of the obst
 Here is the main program.
 
 * Read the ``distance`` detected by ultrasonic module and filter out the values less than 0 (When the ultrasonic module is too far from the obstacle or cannot read the data correctly, ``distance<0`` will appear).
-* When the ``distance`` is between 5 and 40, Pisloth will play ``warning.wav`` and ``attack.mp3`` and move ``forward``.
+* When the ``distance`` is between 5 and 40, PiSloth will play ``warning.wav`` and ``attack.mp3`` and move ``forward``.
 * When the ``distance`` is less than 5, PiSloth will keep the ``stand`` position.
 
 

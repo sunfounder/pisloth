@@ -1,7 +1,7 @@
 Remote Control
 ==================
 
-In this project, we will learn how to use the keyboard to remotely control the Pisloth. You can control the Pisloth to move up, down, left, and right and speak through specific keys.
+In this project, we will learn how to use the keyboard to remotely control the PiSloth. You can control the PiSloth to move up, down, left, and right and speak through specific keys.
 
 **Run the Code**
 

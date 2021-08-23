@@ -4,7 +4,7 @@
 Dance
 =========
 
-Now, PiSltoh will show you his newly learned dance.
+Now, PiSltoh will show you its newly learned dance.
 
 .. image:: ezblock/media/dance_pic.jpg
     :width: 400
@@ -120,7 +120,7 @@ In general, all actions of PiSloth can be implemented with the ``sloth.do_action
 * ``motion_name`` is the name of specific actions, including: ``forward``, ``turn right``, ``turn left``, ``backward``, ``stand``, ``moon walk left``, ``moon walk right``, ``hook``, ``big swing``, ``swing``, ``walk boldly``, ``walk backward boldly``, ``walk shyly``, ``walk backward shyly``, ``stomp rihgt``, ``stomp left``, ``close``, ``open``, ``tiptoe left``, ``tiptoe right``, ``fall left``, ``fall right``.
 * ``step`` represents the number of each action is done, the default is 1.
 * ``speed`` indicates the speed of the action, the default is 50 and the range is 0~100.
-* ``bpm`` means rhythm, the bpm parameter here affects the interval time of Pisloth movement. The higher the value, the shorter the interval time. When we know the beat of a song through the **bpm calculator**, we can make PiSloth dance to the music.
+* ``bpm`` means rhythm, the bpm parameter here affects the interval time of PiSloth movement. The higher the value, the shorter the interval time. When we know the beat of a song through the **bpm calculator**, we can make PiSloth dance to the music.
 
 
 For music bmp, if you want to know more, you can refer to:

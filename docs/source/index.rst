@@ -27,6 +27,7 @@ More experienced makers can use the popular programming language - Python.
    ezblock/play_with_ezblock
    play_with_python
    appendix
+   thank-robot
 
 Copyright Notice
 --------------------------
