@@ -32,7 +32,7 @@ def main():
     sloth.do_action('tiptoe right',2,bpm=129)
 
     sloth.do_action('stomp left',3,bpm=129)
-    sloth.do_action('stomp rihgt',3,bpm=129)
+    sloth.do_action('stomp right',3,bpm=129)
     sloth.do_action('moon walk left',3,bpm=129)
     sloth.do_action('moon walk right',3,bpm=129)
     for i in range(3):
