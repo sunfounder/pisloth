@@ -9,10 +9,10 @@ PiSloth的眼睛由超声波传感器模块组成，可用于检测距离以实�
 
 本教程包括了清单列表、组装pdf、Robot HAT 介绍和PiSloth编程。
 
-编程部分分为两章：Play with Ezblock 和 Play with Python，每一章都可以让你掌握如何让 PiSloth 以你想要的方式工作。
+编程部分分为两章： :ref:`玩转 Ezblock` 和 :ref:`玩转 Python` ，每一章都可以让你掌握如何让 PiSloth 以你想要的方式工作。
 
 Ezblock Studio是 Emakefun 为初学者开发的开发平台，旨在降低树莓派入门门槛。它有两种编程语言：图形化编程和 Python，
-几乎可以在所有不同类型的设备上使用。通过蓝牙和 Wi-Fi 支持，您可以在 Ezblock Studio 上下载代码、远程控制 Raspberry Pi。
+几乎可以在所有不同类型的设备上使用。通过蓝牙和 Wi-Fi 支持，您可以在 Ezblock Studio 上下载代码、远程控制树莓派。
 
 更有经验的创客可以使用流行的编程语言——Python。
 

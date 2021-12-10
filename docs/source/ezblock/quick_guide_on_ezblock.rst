@@ -102,7 +102,7 @@ Ezblock 快速指南
 
 扫描下方二维码，下载 EzBlock Studio APP。
 
-.. image:: media/EzBlock_Studio_v3.0.1_App.png
+.. image:: media/Ezblock_Studio_v3.0.1_App.png
     :align: center
 
 .. .. note::
