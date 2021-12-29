@@ -27,7 +27,7 @@
 
     您可以为您的 PiSloth 下载并打印卡通面具。
     
-    .. `PDF Cartoon Mask <https://github.com/sunfounder/sf-pdf/tree/master/prop_card/cartoon_mask>`_ for your PiSloth.
+    * `卡通面具（.pdf） <https://gitee.com/sunfounder/sf-pdf/tree/master/%E5%8D%A1%E7%89%87/%E5%8D%A1%E9%80%9A%E9%9D%A2%E5%85%B7>`_
 
 此时按 **空格键** 打印4个舵机的角度。您需要记录这些角度值，这些值将在下一个项目 :ref:`custom_action_python` 中使用。
 

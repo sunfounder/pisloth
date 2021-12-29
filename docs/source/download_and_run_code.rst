@@ -3,8 +3,6 @@
 
 首先通过在命令行中使用 ``git clone`` 下载库文件 ``robot-hat``  。
 
-* `cd command <https://en.wikipedia.org/wiki/Cd_(command)>`_
-* `git clone command <https://github.com/git-guides/git-clone>`_
 
 .. raw:: html
 
@@ -13,7 +11,7 @@
 .. code-block::
 
     cd /home/pi/
-    git clone https://github.com/sunfounder/robot-hat.git
+    git clone https://gitee.com/sunfounder/robot-hat.git
     cd robot-hat
     sudo python3 setup.py install
 
@@ -32,7 +30,7 @@
 .. code-block::
 
     cd /home/pi/
-    git clone -b v2.0 https://github.com/sunfounder/pisloth.git
+    git clone -b v2.0 https://gitee.com/sunfounder/pisloth.git
     cd pisloth
     sudo python3 setup.py install
 
@@ -63,7 +61,8 @@
 输入 y 并按 Enter 重新启动机器。
 
 .. note::
-    If there is no sound after restarting, you may need to run the i2samp.sh script multiple times.
+    
+    如果重启后没有声音，你需要多次运行 ``i2samp.sh``。
 
 运行 ``servo_zeroing.py``
 --------------------------

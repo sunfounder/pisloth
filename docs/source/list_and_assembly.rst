@@ -10,5 +10,5 @@
     #. 组装前需要购买2节18650电池并充满电，参见 :ref:`关于电池`.
     #. Robot HAT不能给电池充电，需要额外购买充电器。
 
-* :Download:`元件清单和组装说明 <https://gitee.com/sunfounder/sf-pdf/raw/master/assembly_file/a0000691-pisloth.pdf>`.
+* :Download:`PiSloth组装教程 <https://gitee.com/sunfounder/sf-pdf/raw/master/%E7%BB%84%E8%A3%85%E6%96%87%E4%BB%B6/PiSloth%E7%BB%84%E8%A3%85%E6%95%99%E7%A8%8B.pdf>`.
 

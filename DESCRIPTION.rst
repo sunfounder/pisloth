@@ -1,3 +1,0 @@
-PiSloth
-=======================
-Library for PiSloth

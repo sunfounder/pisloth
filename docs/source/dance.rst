@@ -13,9 +13,9 @@
 
 .. note::
 
-    您可以为您的 PiSloth 打印卡通面具。
+    您可以为您的 PiSloth 下载并打印卡通面具。
     
-    .. `PDF Cartoon Mask <https://github.com/sunfounder/sf-pdf/tree/master/prop_card/cartoon_mask>`_ for your PiSloth.
+    * `卡通面具（.pdf） <https://gitee.com/sunfounder/sf-pdf/tree/master/%E5%8D%A1%E7%89%87/%E5%8D%A1%E9%80%9A%E9%9D%A2%E5%85%B7>`_
 
 **运行代码**
 
@@ -127,8 +127,7 @@
 * ``speed`` 表示动作的速度，默认为50，范围为0~100。
 * ``bpm`` 表示节奏，这里的bpm参数影响PiSloth运动的间隔时间。值越高，间隔时间越短。当我们通过bpm计算器知道一首歌的节拍时，我们可以让 PiSloth 随着音乐跳舞。
 
-.. For music bmp, if you want to know more, you can refer to:
-.. https://en.wikipedia.org/wiki/Tempo
+
 
 .. note::
     
