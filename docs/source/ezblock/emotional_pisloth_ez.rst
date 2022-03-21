@@ -9,40 +9,44 @@ PiSloth 拥有非常多的情绪。时而快乐，时而害羞，时而迷茫。
 
 单击 **函数** 类别并选择相应的功能块，您创建的功能也会出现在这里。
 
-.. image:: media/emotional2.png
+.. image:: img/emotional2.png
   :width: 600
 
 此处使用无输出的 **函数** 块。
 
-.. image:: media/function_name.png
+.. image:: img/function_name.png
 
 
 **示例**
 
+.. note::
+
+  你可以直接打开我们提供的示例或者是按照下图来编写程序，详细教程请参考 :ref:`open_create`。
+
 **Shy(害羞)**
 
-.. image:: media/shy.png
+.. image:: img/shy.png
 
 **Confuse(迷惑)**
 
-.. image:: media/confuse.png
+.. image:: img/confuse.png
 
 **Happy(快乐)**
 
-.. image:: media/happy.png
+.. image:: img/happy.png
 
 **Fear(害怕)**
 
-.. image:: media/fear.png
+.. image:: img/fear.png
 
 **Sad(伤心)**
 
-.. image:: media/sad.png
+.. image:: img/sad.png
 
 **Fall(摔倒)**
 
-.. image:: media/fall.png
+.. image:: img/fall.png
 
 在 **循环** 块中的调用所有自定义函数。
 
-.. image:: media/emotional.png
+.. image:: img/emotional.png
