@@ -18,9 +18,9 @@
 # -- Project information -----------------------------------------------------
 import sphinx_rtd_theme
 
-project = 'Emakefun pisloth'
-copyright = '2021, Emakefun'
-author = 'Emakefun'
+project = 'SunFounder pisloth'
+copyright = '2021, SunFounder'
+author = 'SunFounder'
 
 
 # -- General configuration ---------------------------------------------------
