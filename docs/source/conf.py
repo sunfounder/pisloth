@@ -40,6 +40,17 @@ templates_path = ['_templates']
 exclude_patterns = []
 
 
+# Link to other projects’ documentation with intersphinx. Use the intersphinx_mapping configuration to indicate the name and link of the projects you want to use
+
+extensions = [
+    'sphinx.ext.intersphinx',
+]
+
+
+intersphinx_mapping = {
+    'ezblock': ('https://docs.sunfounder.com/projects/ezblock3/en/latest/', None),
+}
+
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
@@ -79,6 +90,16 @@ html_css_files = [
    'https://ezblock.cc/readDocFile/readTheDoc/src/css/xterm.css',
 ]
 
+# Link to other projects’ documentation with intersphinx. Use the intersphinx_mapping configuration to indicate the name and link of the projects you want to use
+
+extensions = [
+    'sphinx.ext.intersphinx',
+]
+
+
+intersphinx_mapping = {
+    'ezblock': ('https://docs.sunfounder.com/projects/ezblock3/en/latest/', None),
+}
 
 
 # Multi-language

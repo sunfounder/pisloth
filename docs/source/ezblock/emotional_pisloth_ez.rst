@@ -9,40 +9,46 @@ You may want to simplify the program with **Functions**, especially when you per
 
 Click on the **Functions** category and select the appropriate function block, the function you created will also appear here.
 
-.. image:: media/emotional2.png
+.. image:: img/emotional2.png
   :width: 600
 
 The **Function** block without output is used here.
 
-.. image:: media/function_name.png
+.. image:: img/function_name.png
 
 
 **EXAMPLE**
 
+.. note::
+    * You can write the program according to the following picture, please refer to the tutorial: :ref:`ezblock:create_project_latest`
+
+    * Or find the code with the same name on the Examples page of the EzBlock Studio and click Run or Edit directly.
+
+
 **Shy**
 
-.. image:: media/shy.png
+.. image:: img/shy.png
 
 **Confuse**
 
-.. image:: media/confuse.png
+.. image:: img/confuse.png
 
 **Happy**
 
-.. image:: media/happy.png
+.. image:: img/happy.png
 
 **Fear**
 
-.. image:: media/fear.png
+.. image:: img/fear.png
 
 **Sad**
 
-.. image:: media/sad.png
+.. image:: img/sad.png
 
 **Fall**
 
-.. image:: media/fall.png
+.. image:: img/fall.png
 
 Call all custom functions in the Forever block.
 
-.. image:: media/emotional.png
+.. image:: img/emotional.png

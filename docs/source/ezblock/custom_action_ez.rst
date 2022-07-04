@@ -5,7 +5,7 @@ In the previous project, we were able to give PiSloth custom steps, so how do we
 
 For example, have PiSloth make the step from the previous project and then return to the initial position.
 
-.. image:: media/diy_pic.jpg
+.. image:: img/diy_pic.jpg
   :width: 400
   :align: center
 
@@ -18,24 +18,29 @@ For example, have PiSloth make the step from the previous project and then retur
 
 Create a variable **up_down** to store this action.
 
-.. image:: media/up_down.png
+.. image:: img/up_down.png
 
 You can use the **create action** block to make PiSloth do this action. These values ​​represent the angles of the 4 Servos on the PiSloth. The range is (-90~90).
 
-.. image:: media/DIY2.png
+.. image:: img/DIY2.png
 
 Here you can increase or decrease the number of items by dragging it.
 
-.. image:: media/DIY3.png
+.. image:: img/DIY3.png
 
 Fill in the angle obtained in the previous project and name this action **up_down** (drag it from **Variables** category).
 
-.. image:: media/diy_up.png
+.. image:: img/diy_up.png
 
 Use the **do** block to make PiSloth do this action once at 50% speed.
 
-.. image:: media/DIY6.png
+.. image:: img/DIY6.png
 
 **EXAMPLE**
 
-.. image:: media/DIY7.png
+.. note::
+    * You can write the program according to the following picture, please refer to the tutorial: :ref:`ezblock:create_project_latest`
+
+    * Or find the code with the same name on the Examples page of the EzBlock Studio and click Run or Edit directly.
+
+.. image:: img/DIY7.png

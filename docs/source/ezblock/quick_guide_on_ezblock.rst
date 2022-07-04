@@ -1,42 +1,55 @@
-Quick Guide on Ezblock
+Quick Guide on EzBlock
 ===========================
 
 There are 2 parts here:
 
-* :ref:`Before Assembling PiSloth` allows you to keep all the servos at 0 degrees to complete a proper and safe assembly (otherwise you will probably damage the servos).
-* :ref:`Before Programming With Ezblock` will guide you to download Ezblock Studio to play with PiSloth.
+* :ref:`ezb_servo_adjust` allows you to keep all the servos at 0 degrees to complete a proper and safe assembly (otherwise you will probably damage the servos).
+* :ref:`install_ezblock` will guide you to download EzBlock Studio to play with your robot.
 
-Before Assembling PiSloth
------------------------------
+.. _ezb_servo_adjust:
 
-Before assembling the PiSloth, follow the instructions on how to install the Ezblock OS on an Micro SD card here: `Download and Install Ezblock OS <https://docs.sunfounder.com/projects/ezblock3/en/latest/quick_user_guide_for_ezblock3.html#download-and-install-ezblock-os>`_.
+Servo Adjust
+--------------------------------
 
-After burning the Ezblock system on the SD-card, the P11 port on the Robot HAT is set to calibrate the servo angle to a 0° angle. To make sure the servo has been correctly set to 0°, first gently insert a rocker arm in the servo shaft, then slightly rotate the rocker arm to a different angle.
+When assembling to the part with the servo, you need to keep the servo at 0° and secure it with the servo screw. Please follow the tutorial below to do this.
 
-.. image:: media/servo_arm.png
 
-Next, insert the servo cable into the P11 port as shown below:
+#. Firstly, :ref:`ezblock:install_ezblock_os_latest` onto a Micro SD card, once the installation is complete, insert it into the Raspberry Pi.
 
-.. image:: media/pin11_connect.png
-    :width: 600
+#. To ensure that the servo has been properly set to 0°, first insert the rocker arm into the servo shaft and then gently rotate the rocker arm to a different angle.
 
-Turn on the **Power Switch** to the Robot HAT, and the servo arm should return to the 0° position. If the servo arm does not return to 0°, press the **RST** button to restart the Robot HAT.
+    .. image:: img/servo_arm.png
+
+#. Follow the instructions on the assembly foldout, insert the battery holder cable and turn the power switch to the ON. Wait for 1-2 minutes, there will be a sound to indicate that the Raspberry Pi boots successfully.
+
+    .. image:: img/slide_to_power.png
+
+#. Next, plug the servo cable into the P11 port as follows.
+
+    .. image:: img/pin11_connect.png
+
+#. At this point you will see the servo arm rotate to a specific position (0°). If the servo arm does not return to 0°, press the RST button to restart the Robot HAT.
+
+#. Now you can continue the installation as instructed on the assembly foldout.
 
 .. note::
 
-    Before attaching each servo, plug the servo cable into P11 and turn the power on to set the servo to 0°.
-
-    This function will become invalid after writing any programs to the Micro SD card.
-
-
-
-Before Programming With Ezblock
--------------------------------------
+    * Do not unplug this servo cable before fastening this servo with the servo screw, you can unplug it after fastening.
+    * Do not turn the servo while it is powered on to avoid damage; if the servo shaft is inserted at the wrong angle, pull out the servo and reinsert it.
+    * Before assembling each servo, you need to plug the servo cable into P11 and turn on the power to set its angle to 0°.
+    * This zeroing function will be disabled if you download a program to the robot later with the EzBlock APP.
 
 
-First download Ezblock Studio 2, and then manually upgrade to Ezblock Studio 3 to begin programming. 
+.. _install_ezblock:
 
-For a detailed installation tutorial, please refer to: `Install Ezblock Studio <https://docs.sunfounder.com/projects/ezblock3/en/latest/quick_user_guide_for_ezblock3.html#install-ezblock-studio>`_.
+Install and Configure EzBlock Studio
+----------------------------------------
+
+As soon as the robot is assembled, you will need to carry out some basic operations.
+
+* :ref:`ezblock:install_ezblock_app_latest`: Download and install EzBlock Studio on your device or use the web-based version.
+* :ref:`ezblock:connect_product_ezblock_latest`: Configure Wi-Fi, Bluetooth and calibrate before use.
+* :ref:`ezblock:open_run_latest`: View or run the related example directly.
 
 .. note::
 
