@@ -4,9 +4,9 @@ Appendix
 
 .. toctree::
     
-    i2c_configuration
-    remote_desktop
     battery
     filezilla
+    login_windows
+    install_openssh_powershell
 
 
