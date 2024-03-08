@@ -15,7 +15,7 @@ For example, have PiSloth make the step from the previous project and then retur
 
     You can download and print the `PDF Cartoon Mask <https://github.com/sunfounder/sf-pdf/tree/master/prop_card/cartoon_mask>`_ for your PiSloth.
 
-**Step 1**: Go to the ``/home/pi/pisloth/examples`` path.
+**Step 1**: Go to the ``~/pisloth/examples`` path.
 
 .. raw:: html
 
@@ -23,7 +23,7 @@ For example, have PiSloth make the step from the previous project and then retur
 
 .. code-block::
 
-    cd /home/pi/pisloth/examples
+    cd ~/pisloth/examples
 
 **Step 2**: Open ``custom_action.py`` with the following command.
 

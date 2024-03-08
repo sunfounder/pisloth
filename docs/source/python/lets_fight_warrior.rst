@@ -19,7 +19,7 @@ Here, PiSloth is a brave warrior, when it appears in front of the enemy, it will
 
 .. code-block::
 
-    cd /home/pi/pisloth/examples
+    cd ~/pisloth/examples
     sudo python3 lets_fight.py
 
 After the code is run, PiSloth will continuously detect the distance of the obstacle, when the distance is between 5 and 40, PiSloth will make a roaring sound and rush forward; when the distance of the obstacle is less than 5, PiSloth will stop.

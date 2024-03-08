@@ -11,7 +11,7 @@ In this project, we will learn how to use the keyboard to remotely control the P
 
 .. code-block::
 
-    cd /home/pi/pisloth/examples
+    cd ~/pisloth/examples
     sudo python3 keyboard_control.py
 
 Once the code runs, you can control PiSloth by pressing ``wasd``, play different sound effects by pressing ``1234``, and make PiSloth talk by pressing ``qe``.

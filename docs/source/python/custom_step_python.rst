@@ -19,7 +19,7 @@ In this project, we will learn how to customize PiSloth's step.
 
 .. code-block::
 
-    cd /home/pi/pisloth/examples
+    cd ~/pisloth/examples
     sudo python3 custom_step.py
 
 Once the code has been run, press the following keys to adjust the angle of each servo of PiSloth.

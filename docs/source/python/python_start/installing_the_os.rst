@@ -72,8 +72,7 @@ In the Raspberry Pi Imager, click **CHOOSE OS** -> **Raspberry Pi OS(other)**.
 .. image:: img/3d33.png
     :align: center
 
-Scroll down to the end of the newly opened page and you will see **Raspberry Pi OS(Legacy)** and **Raspberry Pi OS Lite(Legacy)**, these are security updates for Debian Buster, the difference between them is with or without the desktop.
-It is recommended to install **Raspberry Pi OS(Legacy)**, the system with the desktop.
+Scroll down to the end of the newly opened page and you will see **Raspberry Pi OS(Legacy)** and **Raspberry Pi OS Lite(Legacy)**.
 
 .. image:: img/3d34.png
     :align: center

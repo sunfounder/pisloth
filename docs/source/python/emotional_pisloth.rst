@@ -12,7 +12,7 @@ PiSloth is very emotional, sometimes happy, sometimes shy, sometimes confused.
 
 .. code-block::
 
-    cd /home/pi/pisloth/examples
+    cd ~/pisloth/examples
     sudo python3 emotional_pisloth.py
 
 

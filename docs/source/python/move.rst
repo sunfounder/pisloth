@@ -15,7 +15,7 @@ This is the first project. PiSloth has woken up, and it moves freely.
 
 .. code-block::
 
-    cd /home/pi/pisloth/examples
+    cd ~/pisloth/examples
     sudo python3 move.py
 
 After running the code, you will see PiSloth move left 7 steps, forward 5 steps, right 7 steps, and forward 5 steps.

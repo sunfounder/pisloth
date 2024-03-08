@@ -5,6 +5,8 @@ SunFounder Raspberry Pi Robot - PiSloth
 Thanks for choosing our PiSloth.
 
 .. image:: pisloth.jpg
+   :width: 500
+   :align: center
 
 PiSloth is a Raspberry Pi Bionic robot with an aluminum alloy structure. It can talk, dance, and even express emotions, such as happiness and excitement.
 

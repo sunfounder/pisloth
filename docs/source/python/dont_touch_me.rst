@@ -11,7 +11,7 @@ If you don't meet PiSloth's needs, it will get angry and stay away from your tou
 
 .. code-block::
 
-    cd /home/pi/pisloth/examples
+    cd ~/pisloth/examples
     sudo python3 dont_touch_me.py
 
 

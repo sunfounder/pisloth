@@ -22,7 +22,7 @@ Now, PiSltoh will show you its newly learned dance.
 
 .. code-block::
 
-    cd /home/pi/pisloth/examples
+    cd ~/pisloth/examples
     sudo python3 dancing.py
 
 The whole dance is divided into 2 parts, and PiSloth will finish these 2 parts with the music. If you don't stop the code, it will repeat the dance.
