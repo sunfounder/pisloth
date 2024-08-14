@@ -12,11 +12,12 @@
 
     👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
 
-SunFounder Raspberry Pi Robot - PiSloth
-=============================================
+SunFounder Raspberry Pi Robot - |link_PiSloth|
+===================================================
 
+* |link_Pi_Sloth|
 
-Thanks for choosing our PiSloth.
+Thanks for choosing our |link_PiSloth|.
 
 .. image:: pisloth.jpg
    :width: 500

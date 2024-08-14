@@ -117,4 +117,12 @@ rst_epilog = """
 
     <a href="https://bit.ly/raphaelkit" target="_blank">here</a>
 
+.. |link_Pi_Sloth| raw:: html
+
+    <a href="https://www.sunfounder.com/products/pisloth?_pos=1&_sid=2d1f1f1a7&_ss=r" target="_blank">Purchase Link for PiSloth</a>
+
+.. |link_PiSloth| raw:: html
+
+    <a href="https://www.sunfounder.com/products/pisloth?_pos=1&_sid=2d1f1f1a7&_ss=r" target="_blank">PiSloth</a>
+
 """
