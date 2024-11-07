@@ -31,7 +31,7 @@ Now, run ``servo_zeroing.py`` in the ``examples/`` folder.
 
 .. code-block::
 
-    cd /home/pi/piarm/examples
+    cd ~/pisloth/examples
     sudo python3 servo_zeroing.py
 
 
