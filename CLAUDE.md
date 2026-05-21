@@ -32,18 +32,20 @@ Key inherited `Robot` methods used by examples:
 ## Install (on Raspberry Pi)
 
 ```bash
-# 1. Install robot-hat first
-git clone https://github.com/sunfounder/robot-hat.git
+# 1. Install robot-hat first (2.5.x branch)
+git clone -b 2.5.x https://github.com/sunfounder/robot-hat.git
 cd robot-hat
-sudo python3 setup.py install
+sudo pip install --break-system-packages .
 
 # 2. Then install pisloth
 git clone -b v2.0 https://github.com/sunfounder/pisloth.git
 cd pisloth
-sudo python3 setup.py install
+sudo pip install --break-system-packages .
 ```
 
-Dependencies declared in `setup.py`: `RPi.GPIO`, `smbus`, `spidev`, `pyserial`.
+## Dependencies
+
+`robot_hat` (v2.5.x). All other deps (GPIO, I2C, SPI, serial) are handled by `robot_hat`.
 
 ## Running examples
 
@@ -58,17 +60,12 @@ python3 keyboard_control.py
 
 Examples run in infinite `while True` loops. Kill with Ctrl+C.
 
-## Known issues with current robot_hat (v2.5+)
+## Compatibility notes (robot_hat 2.5.x)
 
-1. **`from robot_hat import TTS` is broken.** The `robot_hat.tts` module exists but is not re-exported in `robot_hat.__init__`. Use `from robot_hat.tts import Piper as TTS` instead.
+1. **TTS import:** `robot_hat` no longer exports `TTS` from `__init__`. Use `from robot_hat.tts import Piper as TTS`.
 
-2. **Music method names changed.** `robot_hat.Music` no longer has `sound_effect_play` / `sound_effect_threading` / `background_music`. The current API is:
-   - `sound_play(file, volume)` (was `sound_effect_play`)
-   - `sound_play_threading(file, volume)` (was `sound_effect_threading`)
-   - `music_play(file)` (was `background_music`)
-   - `music_set_volume(vol)` — unchanged
-   - `music_stop()` — unchanged
-
-3. **`show` script is Python 2** — uses `print` statements without parentheses. Fails on Python 3 with `SyntaxError`.
-
-4. **`i2samp.sh` is self-duplicated** — the script content appears concatenated twice (around line 521). The second copy references outdated `/boot/config.txt` paths instead of `/boot/firmware/config.txt`.
+2. **Music API (v2.5.x vs older):**
+   - `sound_play()` (was `sound_effect_play`)
+   - `sound_play_threading()` (was `sound_effect_threading`)
+   - `music_play()` (was `background_music`)
+   - `music_set_volume()` / `music_stop()` — unchanged

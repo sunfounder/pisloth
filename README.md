@@ -29,9 +29,9 @@ so on. In addition, it is also equipped with an ultrasonic module to support it 
 Install robot-hat first
 
 ```bash
-git clone https://github.com/sunfounder/robot-hat.git
+git clone -b 2.5.x https://github.com/sunfounder/robot-hat.git
 cd robot-hat
-sudo python3 setup.py install
+sudo pip install --break-system-packages .
 ```
 
 Then install pisloth
@@ -39,7 +39,7 @@ Then install pisloth
 ```bash
 git clone -b v2.0 https://github.com/sunfounder/pisloth.git
 cd pisloth
-sudo python3 setup.py install
+sudo pip install --break-system-packages .
 ```
 
 ## Trouble Shooting
