@@ -20,7 +20,7 @@ def main():
     print(distance)
     if distance <= alert_distance :
         try:
-            music.sound_effect_threading('./sounds/talk3.wav')
+            music.sound_play_threading('./sounds/talk3.wav')
         except Exception as e:
             print(e)
         sloth.do_action('backward', 2, 90)

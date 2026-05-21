@@ -20,8 +20,8 @@ def main():
     distance = sonar.read()
     if distance <= alert_distance and distance >= contact_distance :
         try:
-            music.sound_effect_play('./sounds/battle.wav')
-            music.background_music('./musics/attack.mp3')
+            music.sound_play('./sounds/battle.wav')
+            music.music_play('./musics/attack.mp3')
             music.music_set_volume(20)
         except Exception as e:
             print(e)

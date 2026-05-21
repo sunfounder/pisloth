@@ -1,6 +1,7 @@
 
 from pisloth import Sloth
-from robot_hat import TTS, Music
+from robot_hat.tts import Piper as TTS
+from robot_hat import Music
 from robot_hat import Ultrasonic
 from robot_hat import Pin
 import time
@@ -21,7 +22,7 @@ def main():
         pass
     elif distance <= alert_distance:
         try:
-            music.sound_effect_threading('./sounds/sign.wav')
+            music.sound_play_threading('./sounds/sign.wav')
         except Exception as e:
             print(e)
         sloth.do_action('hook', 1,95)

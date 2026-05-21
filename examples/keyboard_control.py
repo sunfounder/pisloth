@@ -1,6 +1,6 @@
 from pisloth import Sloth
 from robot_hat import Music
-from robot_hat import TTS
+from robot_hat.tts import Piper as TTS
 import sys
 import tty
 import termios
@@ -51,13 +51,13 @@ def main():
         elif key == "d":
             sloth.do_action('turn right', 1, 90)
         elif key == "1":
-            music.sound_effect_play('./sounds/talk1.wav')
+            music.sound_play('./sounds/talk1.wav')
         elif key == "2":
-            music.sound_effect_play('./sounds/talk2.wav')
+            music.sound_play('./sounds/talk2.wav')
         elif key == "3":
-            music.sound_effect_play('./sounds/talk3.wav')
+            music.sound_play('./sounds/talk3.wav')
         elif key == "4":
-            music.sound_effect_play('./sounds/depress.wav')
+            music.sound_play('./sounds/depress.wav')
         elif key == "q":
             tts.say("Oh hello there")
         elif key == "e":

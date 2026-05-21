@@ -14,7 +14,7 @@ sloth.set_offset([0,0,0,0])
 
 def main():
   
-    music.background_music('./musics/india-Arulo.mp3')
+    music.music_play('./musics/india-Arulo.mp3')
     music.music_set_volume(20)
     sloth.do_action('stomp left',3,bpm=129)
     sloth.do_action('stomp right',3,bpm=129)

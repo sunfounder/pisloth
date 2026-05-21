@@ -1,4 +1,5 @@
-from robot_hat import TTS, Music
+from robot_hat.tts import Piper as TTS
+from robot_hat import Music
 import time
 import os
 
@@ -14,12 +15,12 @@ def main():
         # tts.say(name)
         time.sleep(1)
         try:
-            music.sound_effect_play('./sounds/%s' % file)
+            music.sound_play('./sounds/%s' % file)
         except Exception as e:
             print(e)
         time.sleep(2)
-    # music.sound_effect_play('./sounds/happy2.wav')
-    # music.sound_effect_play('./sounds/happy.wav')
+    # music.sound_play('./sounds/happy2.wav')
+    # music.sound_play('./sounds/happy.wav')
 
 if __name__ == "__main__":
     main()  

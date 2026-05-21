@@ -1,6 +1,7 @@
 
 from pisloth import Sloth
-from robot_hat import TTS, Music
+from robot_hat.tts import Piper as TTS
+from robot_hat import Music
 import time
 
 tts = TTS()
@@ -11,14 +12,14 @@ sloth.set_offset([0,0,0,0])
 
 def confuse():
     try:
-        music.sound_effect_threading('./sounds/sign.wav')
+        music.sound_play_threading('./sounds/sign.wav')
     except Exception as e:
         print(e)
     sloth.do_action('hook', 1, 100)  
 
 def happy():
     try:
-        music.sound_effect_threading('./sounds/happy2.wav')
+        music.sound_play_threading('./sounds/happy2.wav')
     except Exception as e:
         print(e)
     for i in range(3):
@@ -27,13 +28,13 @@ def happy():
 
 def fear():
     try:
-        music.sound_effect_threading('./sounds/warning.wav')
+        music.sound_play_threading('./sounds/warning.wav')
     except Exception as e:
         print(e)
     sloth.do_action('hook', 1, 100)
     sloth.do_action('stand', 1, 100)
     try:
-        music.sound_effect_threading('./sounds/warning.wav')
+        music.sound_play_threading('./sounds/warning.wav')
     except Exception as e:
         print(e)
     sloth.do_action('walk backward boldly', 1, 100)
@@ -41,14 +42,14 @@ def fear():
 
 def sad():
     try:
-        music.sound_effect_threading('./sounds/depress.wav')
+        music.sound_play_threading('./sounds/depress.wav')
     except Exception as e:
         print(e)
     sloth.do_action('big swing', 1, 100)  
 
 def angry():
     try:
-        music.sound_effect_threading('./sounds/error.wav')
+        music.sound_play_threading('./sounds/error.wav')
     except Exception as e:
         print(e)
     sloth.do_action('walk backward boldly', 1, 100)  
@@ -56,20 +57,20 @@ def angry():
 
 def fail():
     try:
-        music.sound_effect_threading('./sounds/depress2.wav')
+        music.sound_play_threading('./sounds/depress2.wav')
     except Exception as e:
         print(e)
     sloth.do_action('fall left', 1, 100)  
 
 def shy():
     try:
-        music.sound_effect_threading('./sounds/talk3.wav')
+        music.sound_play_threading('./sounds/talk3.wav')
     except Exception as e:
         print(e)
     sloth.do_action('close', 1, 100)  
     time.sleep(1)    
     try:
-        music.sound_effect_threading('./sounds/talk2.wav')
+        music.sound_play_threading('./sounds/talk2.wav')
     except Exception as e:
         print(e)
     sloth.do_action('stand', 1, 100)    
