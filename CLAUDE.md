@@ -18,7 +18,6 @@ examples/        # Runnable demo scripts
   sounds/        # WAV sound effects
   musics/        # MP3 background music
 i2samp.sh        # I2S audio amplifier setup script (Adafruit-based)
-show             # License display script (Python 2, needs fixing)
 ```
 
 **`Sloth` class** (`pisloth/sloth.py`) extends `robot_hat.Robot`. It defines a `move_list` dictionary of named actions (e.g. `"forward"`, `"turn left"`, `"stomp right"`, `"moon walk left"`, etc.). Each action is a list of 4-element servo-angle tuples `[left_front, left_rear, right_front, right_rear]`.
