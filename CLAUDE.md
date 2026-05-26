@@ -46,6 +46,29 @@ sudo pip install --break-system-packages .
 
 `robot_hat` (v2.5.x). All other deps (GPIO, I2C, SPI, serial) are handled by `robot_hat`.
 
+`robot_hat` 2.5.x pulls TTS into a separate package `sunfounder-voice-assistant`. Install it before use:
+
+```bash
+git clone https://github.com/sunfounder/sunfounder-voice-assistant.git
+cd sunfounder-voice-assistant
+sudo pip install --break-system-packages .
+```
+
+## Hardware setup (one-time)
+
+```bash
+# Enable I2C
+sudo sed -i 's/#dtparam=i2c_arm=on/dtparam=i2c_arm=on/' /boot/firmware/config.txt
+
+# Enable I2S audio amplifier
+cd ~/pisloth
+sudo bash i2samp.sh -y
+# On newer Pi models (vc4-kms-v3d), the I2S card may be at index 2 instead of 0.
+# Check: cat /proc/asound/cards | grep hifiberry
+# If the I2S card number isn't 0, fix: sudo sed -i 's/card 0/card <N>/g' /etc/asound.conf
+sudo reboot
+```
+
 ## Running examples
 
 All examples must be run from the `examples/` directory (they reference `./sounds/` and `./musics/` with relative paths):
@@ -68,3 +91,7 @@ Examples run in infinite `while True` loops. Kill with Ctrl+C.
    - `sound_play_threading()` (was `sound_effect_threading`)
    - `music_play()` (was `background_music`)
    - `music_set_volume()` / `music_stop()` — unchanged
+
+3. **Servo construction:** `Servo` no longer accepts a `PWM` object. Use `Servo('P0')` or `Servo(0)` instead of `Servo(PWM('P0'))`.
+
+4. **TTS dependency:** `robot_hat.tts` delegates to `sunfounder_voice_assistant`. Install it from GitHub (see Dependencies above).

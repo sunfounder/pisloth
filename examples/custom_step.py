@@ -1,7 +1,4 @@
 from pisloth import Sloth
-# from robot_hat import Music
-# from robot_hat import TTS
-from robot_hat import PWM
 from robot_hat import Servo
 
 import sys
@@ -14,10 +11,10 @@ sloth = Sloth([1,2,3,4])
 # music = Music()
 sloth.set_offset([0,0,0,0])
 
-right_leg_servo = Servo(PWM('P0'))
-right_foot_servo = Servo(PWM('P1'))
-left_leg_servo = Servo(PWM('P2'))
-left_foot_servo = Servo(PWM('P3'))
+right_leg_servo = Servo('P0')
+right_foot_servo = Servo('P1')
+left_leg_servo = Servo('P2')
+left_foot_servo = Servo('P3')
 
 
 def readchar():
