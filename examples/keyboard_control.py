@@ -40,7 +40,7 @@ Press keys on keyboard to control PiSloth!
 def main():
     print(manual)
     while True:
-        key = readchar()
+        key = readchar().lower()
         # print(key)
         if key == "w":
             sloth.do_action('forward', 1, 90)

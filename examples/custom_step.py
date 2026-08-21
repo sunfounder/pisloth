@@ -49,7 +49,7 @@ def main():
     right_leg=0
     right_foot=0
     while True:
-        key = readchar()
+        key = readchar().lower()
         # print(key)
         if key == "q":
             left_leg = left_leg+5
