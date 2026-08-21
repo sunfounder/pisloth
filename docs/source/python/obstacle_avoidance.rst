@@ -20,9 +20,7 @@ In this project, PiSloth will use an ultrasonic module to detect obstacles in fr
 
 **Run the Code**
 
-.. raw:: html
 
-    <run></run>
 
 .. code-block::
 
@@ -37,15 +35,14 @@ After the code runs, PiSloth will walk forward. If it detects that the distance 
 .. note::
     You can **Modify/Reset/Copy/Run/Stop** the code below. But before that, you need to go to  source code path like ``pisloth\examples``. After modifying the code, you can run it directly to see the effect.
 
-.. raw:: html
 
-    <run></run>
 
 .. code-block:: python
 
 
     from pisloth import Sloth
-    from robot_hat import TTS, Music
+    from robot_hat.tts import Piper as TTS
+    from robot_hat import Music
     from robot_hat import Ultrasonic
     from robot_hat import Pin
     import time
@@ -66,7 +63,7 @@ After the code runs, PiSloth will walk forward. If it detects that the distance 
             pass
         elif distance <= alert_distance:
             try:
-                music.sound_effect_threading('./sounds/sign.wav')
+                music.sound_play_threading('./sounds/sign.wav')
             except Exception as e:
                 print(e)
             sloth.do_action('hook', 1,95)
@@ -112,7 +109,7 @@ Here is the main program.
         pass
     elif distance <= alert_distance:
         try:
-            music.sound_effect_threading('./sounds/sign.wav')
+            music.sound_play_threading('./sounds/sign.wav')
         except Exception as e:
             print(e)
         sloth.do_action('hook', 1,95)

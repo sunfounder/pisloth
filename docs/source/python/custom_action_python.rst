@@ -31,9 +31,7 @@ For example, have PiSloth make the step from the previous project and then retur
 
 **Step 1**: Go to the ``~/pisloth/examples`` path.
 
-.. raw:: html
 
-    <run></run>
 
 .. code-block::
 
@@ -41,9 +39,7 @@ For example, have PiSloth make the step from the previous project and then retur
 
 **Step 2**: Open ``custom_action.py`` with the following command.
 
-.. raw:: html
 
-    <run></run>
 
 .. code-block::
 
@@ -60,9 +56,7 @@ For example, have PiSloth make the step from the previous project and then retur
 
 **Step 4**: Run this code.
 
-.. raw:: html
 
-    <run></run>
 
 .. code-block::
 
@@ -75,9 +69,7 @@ For example, have PiSloth make the step from the previous project and then retur
 .. note::
     You can **Modify/Reset/Copy/Run/Stop** the code below. But before that, you need to go to  source code path like ``pisloth\examples``. After modifying the code, you can run it directly to see the effect.
 
-.. raw:: html
 
-    <run></run>
 
 .. code-block:: python
 

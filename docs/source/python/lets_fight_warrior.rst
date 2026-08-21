@@ -27,9 +27,7 @@ Here, PiSloth is a brave warrior, when it appears in front of the enemy, it will
 
 **Run the Code**
 
-.. raw:: html
 
-    <run></run>
 
 .. code-block::
 
@@ -45,9 +43,7 @@ After the code is run, PiSloth will continuously detect the distance of the obst
 .. note::
     You can **Modify/Reset/Copy/Run/Stop** the code below. But before that, you need to go to  source code path like ``pisloth\examples``. After modifying the code, you can run it directly to see the effect.
 
-.. raw:: html
 
-    <run></run>
 
 .. code-block:: python
 
@@ -73,8 +69,8 @@ After the code is run, PiSloth will continuously detect the distance of the obst
         distance = sonar.read()
         if distance <= alert_distance and distance >= contact_distance :
             try:
-                music.sound_effect_play('./sounds/battle.wav')
-                music.background_music('./musics/attack.mp3')
+                music.sound_play('./sounds/battle.wav')
+                music.music_play('./musics/attack.mp3')
                 music.music_set_volume(20)
             except Exception as e:
                 print(e)
@@ -101,7 +97,7 @@ After the code is run, PiSloth will continuously detect the distance of the obst
 Here is the main program.
 
 * Read the ``distance`` detected by ultrasonic module and filter out the values less than 0 (When the ultrasonic module is too far from the obstacle or cannot read the data correctly, ``distance<0`` will appear).
-* When the ``distance`` is between 5 and 40, PiSloth will play ``warning.wav`` and ``attack.mp3`` and move ``forward``.
+* When the ``distance`` is between 5 and 40, PiSloth will play ``battle.wav`` and ``attack.mp3`` and move ``forward``.
 * When the ``distance`` is less than 5, PiSloth will keep the ``stand`` position.
 
 
@@ -110,19 +106,19 @@ Here is the main program.
     distance = sonar.read()
     if distance <= alert_distance and distance >= contact_distance :
         try:
-            music.sound_effect_play('./sounds/battle.wav')
-            music.background_music('./musics/attack.mp3')
+            music.sound_play('./sounds/battle.wav')
+            music.music_play('./musics/attack.mp3')
             music.music_set_volume(20)
         except Exception as e:
             print(e)
         while True:
             distance = sonar.read()
             print(distance)
-            if distance< 0:
+            if distance < 0:
                 continue
-            if distance<=contact_distance:
+            if distance <= contact_distance:
                 break
-            sloth.do_action('forward', 1,95)
+            sloth.do_action('forward', 1,90)
     sloth.do_action('stand', 1, 90)
     time.sleep(1)
 

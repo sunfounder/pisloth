@@ -30,9 +30,7 @@ Now, PiSltoh will show you its newly learned dance.
 
 **Run the Code**
 
-.. raw:: html
 
-    <run></run>
 
 .. code-block::
 
@@ -47,9 +45,7 @@ The whole dance is divided into 2 parts, and PiSloth will finish these 2 parts w
 .. note::
     You can **Modify/Reset/Copy/Run/Stop** the code below. But before that, you need to go to  source code path like ``pisloth\examples``. After modifying the code, you can run it directly to see the effect.
 
-.. raw:: html
 
-    <run></run>
 
 .. code-block:: python
 
@@ -69,7 +65,7 @@ The whole dance is divided into 2 parts, and PiSloth will finish these 2 parts w
 
     def main():
     
-        music.background_music('./musics/india-Arulo.mp3')
+        music.music_play('./musics/india-Arulo.mp3')
         music.music_set_volume(20)
         sloth.do_action('stomp left',3,bpm=129)
         sloth.do_action('stomp right',3,bpm=129)
@@ -87,7 +83,7 @@ The whole dance is divided into 2 parts, and PiSloth will finish these 2 parts w
         sloth.do_action('tiptoe right',2,bpm=129)
 
         sloth.do_action('stomp left',3,bpm=129)
-        sloth.do_action('stomp rihgt',3,bpm=129)
+        sloth.do_action('stomp right',3,bpm=129)
         sloth.do_action('moon walk left',3,bpm=129)
         sloth.do_action('moon walk right',3,bpm=129)
         for i in range(3):
@@ -120,18 +116,18 @@ You can make PiSloth play music by importing the following libraries.
 
 .. code-block:: python
 
-    from robot_hat import TTS, Music
+    from robot_hat import Music
 
-Play the background music in the ``pisloth/examples/musics`` directory and set the volume to 20. You can also add music to the ``musics`` folder via :ref:`filezilla_software`.
+Play the music in the ``pisloth/examples/musics`` directory and set the volume to 20. You can also add music to the ``musics`` folder via :ref:`filezilla_software`.
 
 .. code-block:: python
 
-    music.background_music('./musics/india-Arulo.mp3')
+    music.music_play('./musics/india-Arulo.mp3')
     music.music_set_volume(20)
 
 In general, all actions of PiSloth can be implemented with the ``sloth.do_action()`` function. It has four parameters:
 
-* ``motion_name`` is the name of specific actions, including: ``forward``, ``turn right``, ``turn left``, ``backward``, ``stand``, ``moon walk left``, ``moon walk right``, ``hook``, ``big swing``, ``swing``, ``walk boldly``, ``walk backward boldly``, ``walk shyly``, ``walk backward shyly``, ``stomp rihgt``, ``stomp left``, ``close``, ``open``, ``tiptoe left``, ``tiptoe right``, ``fall left``, ``fall right``.
+* ``motion_name`` is the name of specific actions, including: ``forward``, ``turn right``, ``turn left``, ``backward``, ``stand``, ``moon walk left``, ``moon walk right``, ``hook``, ``big swing``, ``swing``, ``walk boldly``, ``walk backward boldly``, ``walk shyly``, ``walk backward shyly``, ``stomp right``, ``stomp left``, ``close``, ``open``, ``tiptoe left``, ``tiptoe right``, ``fall left``, ``fall right``.
 * ``step`` represents the number of each action is done, the default is 1.
 * ``speed`` indicates the speed of the action, the default is 50 and the range is 0~100.
 * ``bpm`` means rhythm, the bpm parameter here affects the interval time of PiSloth movement. The higher the value, the shorter the interval time. When we know the beat of a song through the **bpm calculator**, we can make PiSloth dance to the music.

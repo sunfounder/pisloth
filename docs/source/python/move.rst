@@ -23,9 +23,7 @@ This is the first project. PiSloth has woken up, and it moves freely.
 
 **Run the Code**
 
-.. raw:: html
 
-    <run></run>
 
 .. code-block::
 
@@ -40,9 +38,7 @@ After running the code, you will see PiSloth move left 7 steps, forward 5 steps,
 .. note::
     You can **Modify/Reset/Copy/Run/Stop** the code below. But before that, you need to go to  source code path like ``pisloth\examples``. After modifying the code, you can run it directly to see the effect.
 
-.. raw:: html
 
-    <run></run>
 
 .. code-block:: python
 
@@ -89,7 +85,7 @@ Finally use the ``sloth.do_action()`` function to make PiSloth move.
 
 In general, all actions of PiSloth can be implemented with the ``sloth.do_action()`` function. It has four parameters:
 
-* ``motion_name`` is the name of specific actions, including: ``forward``, ``turn right``, ``turn left``, ``backward``, ``stand``, ``moon walk left``, ``moon walk right``, ``hook``, ``big swing``, ``swing``, ``walk boldly``, ``walk backward boldly``, ``walk shyly``, ``walk backward shyly``, ``stomp rihgt``, ``stomp left``, ``close``, ``open``, ``tiptoe left``, ``tiptoe right``, ``fall left``, ``fall right``.
+* ``motion_name`` is the name of specific actions, including: ``forward``, ``turn right``, ``turn left``, ``backward``, ``stand``, ``moon walk left``, ``moon walk right``, ``hook``, ``big swing``, ``swing``, ``walk boldly``, ``walk backward boldly``, ``walk shyly``, ``walk backward shyly``, ``stomp right``, ``stomp left``, ``close``, ``open``, ``tiptoe left``, ``tiptoe right``, ``fall left``, ``fall right``.
 * ``step`` represents the number of each action is done, the default is 1.
 * ``speed`` indicates the speed of the action, the default is 50 and the range is 0~100.
 * ``bpm`` means rhythm, we will use it later in the :ref:`dance_python` project.

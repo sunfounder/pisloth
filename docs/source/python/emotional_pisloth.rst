@@ -20,9 +20,7 @@ PiSloth is very emotional, sometimes happy, sometimes shy, sometimes confused.
 
 **Run the Code**
 
-.. raw:: html
 
-    <run></run>
 
 .. code-block::
 
@@ -35,15 +33,14 @@ PiSloth is very emotional, sometimes happy, sometimes shy, sometimes confused.
 .. note::
     You can **Modify/Reset/Copy/Run/Stop** the code below. But before that, you need to go to  source code path like ``pisloth\examples``. After modifying the code, you can run it directly to see the effect.
 
-.. raw:: html
 
-    <run></run>
 
 .. code-block:: python
 
 
     from pisloth import Sloth
-    from robot_hat import TTS, Music
+    from robot_hat.tts import Piper as TTS
+    from robot_hat import Music
     import time
 
     tts = TTS()
@@ -54,14 +51,14 @@ PiSloth is very emotional, sometimes happy, sometimes shy, sometimes confused.
 
     def confuse():
         try:
-            music.sound_effect_threading('./sounds/sign.wav')
+            music.sound_play_threading('./sounds/sign.wav')
         except Exception as e:
             print(e)
         sloth.do_action('hook', 1, 90)  
 
     def happy():
         try:
-            music.sound_effect_threading('./sounds/happy2.wav')
+            music.sound_play_threading('./sounds/happy2.wav')
         except Exception as e:
             print(e)
         for i in range(3):
@@ -70,13 +67,13 @@ PiSloth is very emotional, sometimes happy, sometimes shy, sometimes confused.
 
     def fear():
         try:
-            music.sound_effect_threading('./sounds/warning.wav')
+            music.sound_play_threading('./sounds/warning.wav')
         except Exception as e:
             print(e)
         sloth.do_action('hook', 1, 90)
         sloth.do_action('stand', 1, 90)
         try:
-            music.sound_effect_threading('./sounds/warning.wav')
+            music.sound_play_threading('./sounds/warning.wav')
         except Exception as e:
             print(e)
         sloth.do_action('walk backward boldly', 1, 90)
@@ -84,14 +81,14 @@ PiSloth is very emotional, sometimes happy, sometimes shy, sometimes confused.
 
     def sad():
         try:
-            music.sound_effect_threading('./sounds/depress.wav')
+            music.sound_play_threading('./sounds/depress.wav')
         except Exception as e:
             print(e)
         sloth.do_action('big swing', 1, 90)  
 
     def angry():
         try:
-            music.sound_effect_threading('./sounds/error.wav')
+            music.sound_play_threading('./sounds/error.wav')
         except Exception as e:
             print(e)
         sloth.do_action('walk backward boldly', 1, 90)  
@@ -99,20 +96,20 @@ PiSloth is very emotional, sometimes happy, sometimes shy, sometimes confused.
 
     def fail():
         try:
-            music.sound_effect_threading('./sounds/depress2.wav')
+            music.sound_play_threading('./sounds/depress2.wav')
         except Exception as e:
             print(e)
         sloth.do_action('fall left', 1, 90)  
 
     def shy():
         try:
-            music.sound_effect_threading('./sounds/talk3.wav')
+            music.sound_play_threading('./sounds/talk3.wav')
         except Exception as e:
             print(e)
         sloth.do_action('close', 1, 90)  
         time.sleep(1)    
         try:
-            music.sound_effect_threading('./sounds/talk2.wav')
+            music.sound_play_threading('./sounds/talk2.wav')
         except Exception as e:
             print(e)
         sloth.do_action('stand', 1, 90)    

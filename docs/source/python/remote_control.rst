@@ -19,9 +19,7 @@ In this project, we will learn how to use the keyboard to remotely control the P
 
 **Run the Code**
 
-.. raw:: html
 
-    <run></run>
 
 .. code-block::
 
@@ -49,15 +47,13 @@ Press ``esc`` to exit.
 .. note::
     You can **Modify/Reset/Copy/Run/Stop** the code below. But before that, you need to go to  source code path like ``pisloth\examples``. After modifying the code, you can run it directly to see the effect.
 
-.. raw:: html
 
-    <run></run>
 
 .. code-block:: python
 
     from pisloth import Sloth
     from robot_hat import Music
-    from robot_hat import TTS
+    from robot_hat.tts import Piper as TTS
     import sys
     import tty
     import termios
@@ -81,17 +77,17 @@ Press ``esc`` to exit.
     manual = '''
     Press keys on keyboard to control PiSloth!
 
-        w: Forward
-        a: Turn left
-        s: Backward
-        d: Turn right
+        W: Forward
+        A: Turn left
+        S: Backward
+        D: Turn right
         1: Sound effect: talk1
         2: Sound effect: talk2
         3: Sound effect: talk3
         4: Sound effect: depress2
-        q: Say: "Oh hello there"
-        e: Say: "bye"
-        esc: Quit
+        Q: Say: "Oh hello there"
+        E: Say: "bye"
+        ESC: Quit
     '''
 
     def main():
@@ -108,13 +104,13 @@ Press ``esc`` to exit.
             elif key == "d":
                 sloth.do_action('turn right', 1, 90)
             elif key == "1":
-                music.sound_effect_play('./sounds/talk1.wav')
+                music.sound_play('./sounds/talk1.wav')
             elif key == "2":
-                music.sound_effect_play('./sounds/talk2.wav')
+                music.sound_play('./sounds/talk2.wav')
             elif key == "3":
-                music.sound_effect_play('./sounds/talk3.wav')
+                music.sound_play('./sounds/talk3.wav')
             elif key == "4":
-                music.sound_effect_play('./sounds/depress.wav')
+                music.sound_play('./sounds/depress.wav')
             elif key == "q":
                 tts.say("Oh hello there")
             elif key == "e":
@@ -138,14 +134,14 @@ This function refers to the standard input stream and returns the first characte
 .. code-block:: python
 
     def readchar():
-		fd = sys.stdin.fileno() 
-		old_settings = termios.tcgetattr(fd) 
-		try:
-			tty.setraw(sys.stdin.fileno())  
-			ch = sys.stdin.read(1)
-		finally:
-			termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)  
-		return ch
+        fd = sys.stdin.fileno()
+        old_settings = termios.tcgetattr(fd)
+        try:
+            tty.setraw(sys.stdin.fileno())
+            ch = sys.stdin.read(1)
+        finally:
+            termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
+        return ch
 
 
 
@@ -154,8 +150,8 @@ Finally, according to the read keyboard characters, let PiSloth do the actions w
 .. code-block:: python
 
     key = readchar().lower()
-        # print(key)
-        if key == "w":
+    # print(key)
+    if key == "w":
             sloth.do_action('forward', 1, 90)
         elif key == "a":
             sloth.do_action('turn left', 1, 90)
@@ -164,13 +160,13 @@ Finally, according to the read keyboard characters, let PiSloth do the actions w
         elif key == "d":
             sloth.do_action('turn right', 1, 90)
         elif key == "1":
-            music.sound_effect_play('./sounds/talk1.wav')
+            music.sound_play('./sounds/talk1.wav')
         elif key == "2":
-            music.sound_effect_play('./sounds/talk2.wav')
+            music.sound_play('./sounds/talk2.wav')
         elif key == "3":
-            music.sound_effect_play('./sounds/talk3.wav')
+            music.sound_play('./sounds/talk3.wav')
         elif key == "4":
-            music.sound_effect_play('./sounds/depress.wav')
+            music.sound_play('./sounds/depress.wav')
         elif key == "q":
             tts.say("Oh hello there")
         elif key == "e":

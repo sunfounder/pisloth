@@ -27,9 +27,7 @@ In this project, we will learn how to customize PiSloth's step.
 
 **Run the Code**
 
-.. raw:: html
 
-    <run></run>
 
 .. code-block::
 
@@ -69,16 +67,11 @@ Press the **key SPACE** to print the angle of the 4 servos at this time. You nee
 .. note::
     You can **Modify/Reset/Copy/Run/Stop** the code below. But before that, you need to go to  source code path like ``pisloth\examples``. After modifying the code, you can run it directly to see the effect.
 
-.. raw:: html
 
-    <run></run>
 
 .. code-block:: python
 
     from pisloth import Sloth
-    # from robot_hat import Music
-    # from robot_hat import TTS
-    from robot_hat import PWM
     from robot_hat import Servo
 
     import sys
@@ -91,10 +84,10 @@ Press the **key SPACE** to print the angle of the 4 servos at this time. You nee
     # music = Music()
     sloth.set_offset([0,0,0,0])
 
-    right_leg_servo = Servo(PWM('P0'))
-    right_foot_servo = Servo(PWM('P1'))
-    left_leg_servo = Servo(PWM('P2'))
-    left_foot_servo = Servo(PWM('P3'))
+    right_leg_servo = Servo('P0')
+    right_foot_servo = Servo('P1')
+    left_leg_servo = Servo('P2')
+    left_foot_servo = Servo('P3')
 
 
     def readchar():
@@ -109,14 +102,14 @@ Press the **key SPACE** to print the angle of the 4 servos at this time. You nee
 
     manual = '''
     Press keys on keyboard to control PiSloth!
-        q: Increase the servo angle of the left leg
-        w: Decrease the servo angle of the left leg
-        z: Increase the servo angle of the left foot
-        x: Decrease the servo angle of the left foot
-        i: Increase the servo angle of the right leg
-        o: Decrease the servo angle of the right leg
-        n: Increase the servo angle of the right foot
-        m: Decrease the servo angle of the right foot
+        Q: Increase the servo angle of the left leg
+        W: Decrease the servo angle of the left leg
+        Z: Increase the servo angle of the left foot
+        X: Decrease the servo angle of the left foot
+        I: Increase the servo angle of the right leg
+        O: Decrease the servo angle of the right leg
+        N: Increase the servo angle of the right foot
+        M: Decrease the servo angle of the right foot
         SPACE: Print all angle
         ESC: Quit
     '''
