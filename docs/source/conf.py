@@ -17,18 +17,31 @@
 
 # -- Project information -----------------------------------------------------
 import sphinx_rtd_theme
+import time  ###
 
 project = 'SunFounder pisloth'
-copyright = '2021, SunFounder'
+copyright = f'{time.localtime().tm_year}, SunFounder'  ###
 author = 'www.sunfounder.com'
 
+
+# -- sphinx_rtd_theme Theme options -----------------------------------------------------
+html_theme_options = {
+    'flyout_display': 'attached',
+    'version_selector': False,
+    'language_selector': False,
+}
 
 # -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.autosectionlabel'
+extensions = [
+    # 'sphinx.ext.autosectionlabel',
+    'sphinx_copybutton',
+    'sphinx_rtd_theme',
+    'sphinx_design',
+    'sphinxcontrib.mermaid'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -40,55 +53,46 @@ templates_path = ['_templates']
 exclude_patterns = []
 
 
-# Link to other projects’ documentation with intersphinx. Use the intersphinx_mapping configuration to indicate the name and link of the projects you want to use
-
-extensions = [
-    'sphinx.ext.intersphinx',
-]
-
-
-intersphinx_mapping = {
-    'ezblock': ('https://docs.sunfounder.com/projects/ezblock3/en/latest/', None),
-}
-
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
+html_static_path = ['_static']
 html_theme = 'sphinx_rtd_theme'
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 
 # SunFounder logo
 
-# html_js_files = [
-#     'https://ezblock.cc/readDocFile/custom.js',
-# ]
-# html_css_files = [
-#     'https://ezblock.cc/readDocFile/custom.css',
-# ]
+html_js_files = [
+    'https://ezblock.cc/readDocFile/custom.js', 
+    './lang.js', # new
+]
+html_css_files = [
+    'https://ezblock.cc/readDocFile/custom.css',
+]
 
 #### RTD+
 
-html_js_files = [
-    'https://ezblock.cc/readDocFile/custom.js',
-   'https://ezblock.cc/readDocFile/readTheDoc/src/js/ace.js',
-   'https://ezblock.cc/readDocFile/readTheDoc/src/js/ext-language_tools.js',
-   'https://ezblock.cc/readDocFile/readTheDoc/src/js/theme-chrome.js',
-   'https://ezblock.cc/readDocFile/readTheDoc/src/js/mode-python.js',
-   'https://ezblock.cc/readDocFile/readTheDoc/src/js/mode-sh.js',
-   'https://ezblock.cc/readDocFile/readTheDoc/src/js/monokai.js',
-   'https://ezblock.cc/readDocFile/readTheDoc/src/js/xterm.js',
-   'https://ezblock.cc/readDocFile/readTheDoc/src/js/FitAddon.js',
-   'https://ezblock.cc/readDocFile/readTheDoc/src/js/readTheDocIndex.js',
+# html_js_files = [
+#     'https://ezblock.cc/readDocFile/custom.js',
+#    'https://ezblock.cc/readDocFile/readTheDoc/src/js/ace.js',
+#    'https://ezblock.cc/readDocFile/readTheDoc/src/js/ext-language_tools.js',
+#    'https://ezblock.cc/readDocFile/readTheDoc/src/js/theme-chrome.js',
+#    'https://ezblock.cc/readDocFile/readTheDoc/src/js/mode-python.js',
+#    'https://ezblock.cc/readDocFile/readTheDoc/src/js/mode-sh.js',
+#    'https://ezblock.cc/readDocFile/readTheDoc/src/js/monokai.js',
+#    'https://ezblock.cc/readDocFile/readTheDoc/src/js/xterm.js',
+#    'https://ezblock.cc/readDocFile/readTheDoc/src/js/FitAddon.js',
+#    'https://ezblock.cc/readDocFile/readTheDoc/src/js/readTheDocIndex.js',
 
-]
-html_css_files = [
-   'https://ezblock.cc/readDocFile/custom.css',
-   'https://ezblock.cc/readDocFile/readTheDoc/src/css/index.css',
-   'https://ezblock.cc/readDocFile/readTheDoc/src/css/xterm.css',
-]
+# ]
+# html_css_files = [
+#    'https://ezblock.cc/readDocFile/custom.css',
+#    'https://ezblock.cc/readDocFile/readTheDoc/src/css/index.css',
+#    'https://ezblock.cc/readDocFile/readTheDoc/src/css/xterm.css',
+# ]
 
 # Link to other projects’ documentation with intersphinx. Use the intersphinx_mapping configuration to indicate the name and link of the projects you want to use
 

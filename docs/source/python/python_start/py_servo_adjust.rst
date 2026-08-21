@@ -25,9 +25,7 @@ Follow the instructions on the assembly foldout, insert the battery holder cable
 
 Now, run ``servo_zeroing.py`` in the ``examples/`` folder.
 
-.. raw:: html
 
-    <run></run>
 
 .. code-block::
 

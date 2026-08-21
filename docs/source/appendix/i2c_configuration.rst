@@ -21,9 +21,7 @@ Enable the I2C port of your Raspberry Pi (If you have
 enabled it, skip this; if you do not know whether you have done that or
 not, please continue).
 
-.. raw:: html
 
-    <run></run>
 
 .. code-block:: 
 

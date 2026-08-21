@@ -36,9 +36,7 @@ disabled. You need to enable it in config.
 
 Input the following command:
 
-.. raw:: html
 
-    <run></run>
 
 .. code-block:: 
 
@@ -129,9 +127,7 @@ Login to Raspberry Pi by using SSH.
 
 Input the following instructions to install XRDP.
 
-.. raw:: html
 
-    <run></run>
 
 .. code-block:: 
 
